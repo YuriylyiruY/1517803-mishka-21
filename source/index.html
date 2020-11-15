@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
@@ -9,35 +8,33 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="body">
   <header class="body__header">
-    <a class="body__header--logo"><img src="img/mishka-logo.svg" width="86" height="35" alt="логотип Мишка»"></a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site__list">
-          <li class="site-list__item"><img src="img/mishka-logo.svg" width="86" height="35" alt="логотип Мишка»"></a>
-            <nav class="main-nav"> <button type="button"><span class="visually-hidden">Закрыть меню</span></button>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item"><input type="search" name="" id=""></li>
-          <div class="main-nav__list user__list">
-            <p class="main-nav__basket">Корзина:</p>
-            <span class="main-nav__basket-result"> пока пуста</span>
-          </div>
-        </ul>
-
-      </div>
+    <a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
+        alt="логотип Мишка»"></a>
+    <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item"><a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg"
+              width="86" height="35" alt="логотип Мишка»"></a>
+          <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="header__item"><input type="search" name="" id=""></li>
+        <div class="header__wrap-basket">
+          <p class="header__basket">Корзина:</p>
+          <span class="header__basket-result"> пока пуста</span>
+        </div>
+      </ul>
     </nav>
   </header>
   <main class="body__main">
