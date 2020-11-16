@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
@@ -9,24 +8,23 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <header class="body__header">
   <a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
       alt="логотип Мишка»"></a>
   <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
   <nav class="header__nav">
     <ul class="header__list">
-      <li class="header__item"><a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg"
-            width="86" height="35" alt="логотип Мишка»"></a>
+      <li class="header__item"><a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg" width="86"
+            height="35" alt="логотип Мишка»"></a>
         <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       </li>
       <li class="header__item">
-        <a class="header__link" href="">
+        <a class="header__link" href="catalog.html">
           Каталог товаров
         </a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="">
+        <a class="header__link" href="form.html">
           Вязание на заказ
         </a>
       </li>
@@ -38,8 +36,50 @@
     </ul>
   </nav>
 </header>
-
-
+<main class="body__main">
+  <h1 class="main__title">Каталог товаров"</h1>
+  <ul class="main__goods-list">
+    <li class="main__goods-item">
+      <a class="main__image-goods"><img></a>
+      <a class="main__link-goods">Зайчик-попрыгайчик</a>
+      <p class="main__disсription-goods">Рост 30 см, вес 200 г</p>
+      <p class="main__price-goods">1200p.</p>
+      <button class="main__button-order-form" type="button"><img></button>
+    </li>
+    <li class="main__goods-item">
+      <a class="main__image-goods"><img></a>
+      <a class="main__link-goods">Корзинка для белья</a>
+      <p class="main__disсription-goods">Диаметр 15 см, высота 10 см</p>
+      <p class="main__price-goods">690p.</p>
+      <button class="main__button-order-form" type="button"><img></button>
+    </li>
+    <li class="main__goods-item">
+      <a class="main__image-goods"><img></a>
+      <a class="main__link-goods">Большая корзинка для игрушек</a>
+      <p class="main__disсription-goods">Диаметр 30 см, высота 30 см</p>
+      <p class="main__price-goods">1500p.</p>
+      <button class="main__button-order-form" type="button"><img></button>
+    </li>
+    <li class="main__goods-item">
+      <p class="main__image-goods main__video-produce-goods">Процесс производства</p>
+      <video>
+        <source src="URL">
+      </video>
+      <p class="main__discription-video">По просьбам наших любимых фолловеров мы сняли для
+        вас подробное видео о том, как появляются наши товары.</p>
+    </li>
+  </ul>
+  <form class="week-goods__order-form week-goods__order--active">
+    <legend class="week-goods__order-title">Добавить в корзину</legend>
+    <fieldset class="week-goods__choose"> Выберите размер
+      <label><input type="checkbox" checked>S</label>
+      <label><input type="checkbox">M</label>
+      <label><input type="checkbox">L</label>
+    </fieldset>
+    <input type="submit" value="Добавить">
+  </form>
+  <input type="submit" value="Сделать заказ">
+</main>
 <footer class="body__footer">
   <section class="footer__comunication">
     <div class="communication__wraper">
