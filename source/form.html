@@ -11,41 +11,41 @@
 </head>
 
 <body class="body">
-  <header class="body__header">
-    <a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
+  <header class="header">
+    <a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
         alt="логотип Мишка»"></a>
     <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item"><a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg"
-              width="86" height="35" alt="логотип Мишка»"></a>
-          <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть
+    <nav class="header__nav header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86"
+              height="35" alt="логотип Мишка»"></a>
+          <button class="header-nav__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть
               меню</span></button>
         </li>
-        <li class="header__item">
-          <a class="header__link" href="catalog.html">
+        <li class="header-nav__item header-nav-item">
+          <a class="header-nav-item__link" href="catalog.html">
             Каталог товаров
           </a>
         </li>
-        <li class="header__item">
-          <a class="header__link" href="form.html">
+        <li class="header-nav__item header-nav-item">
+          <a class="header-nav-item__link" href="form.html">
             Вязание на заказ
           </a>
         </li>
-        <li class="header__item"><input type="search" name="" id=""></li>
-        <div class="header__wrap-basket">
-          <p class="header__basket">Корзина:</p>
-          <span class="header__basket-result"> пока пуста</span>
-        </div>
+        <li class="header-nav__item"><input type="search" name="search" id="search"></li>
       </ul>
+      <div class="header-nav__wrap-basket header-nav-wrap-basket">
+        <p class="header-nav-wrap-basket__basket">Корзина:</p>
+        <span class="header-nav-wrap-basket__basket-result"> пока пуста</span>
+      </div>
     </nav>
   </header>
-  <main class="body__main">
-    <h1 class="main__title">Вязание на заказ</h1>
-    <p class="main__inventation-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+  <main class="main">
+    <h1 class="title">Вязание на заказ</h1>
+    <p class="inventation-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
       мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form class="main__order-knitting" action="https://echo.htmlacademy.ru/">
-      <fieldset class=main__form-type>
+    <form class="order-knitting" action="https://echo.htmlacademy.ru/">
+      <fieldset class=order-knitting__form-type>
         <legend>Тип</legend>
         <label>
           <input type="radio" name="accompaniment" value="" checked> Аксессуар для интерьера
@@ -54,77 +54,82 @@
           <input type="radio" name="kid-toy" value=""> Детская игрушка
         </label>
       </fieldset>
-      <fieldset class="main__form-color">
+      <fieldset class="order-knitting__form-color">
         <legend>Цвет</legend>
-        <input type="checkbox" name="form-color" id="subscribe-field" checked>
-        <label for="subscribe-field">Белый</label>
-        <input type="checkbox" name="form-color" id="subscribe-field" checked>
-        <label for="subscribe-field">Серый</label>
-        <input type="checkbox" name="form-color" id="subscribe-field">
-        <label for="subscribe-field">«Тиффани»</label>
-        <input type="checkbox" name="form-color" id="subscribe-field">
-        <label for="subscribe-field">Чёрный</label>
-        <input type="checkbox" name="form-color" id="subscribe-field">
-        <label for="subscribe-field">Розовый</label>
-        <input type="checkbox" name="form-color" id="subscribe-field">
-        <label for="subscribe-field">Оранжевый</label>
+        <input type="checkbox" name="form-color" id="subscribe_white" checked>
+        <label for="subscribe_white">Белый</label>
+        <input type="checkbox" name="form-color" id="subscribe_gray" checked>
+        <label for="subscribe_gray">Серый</label>
+        <input type="checkbox" name="form-color" id="subscribe_tiffany">
+        <label for="subscribe_tiffany">«Тиффани»</label>
+        <input type="checkbox" name="form-color" id="subscribe_black">
+        <label for="subscribe_black">Чёрный</label>
+        <input type="checkbox" name="form-color" id="subscribe_pink">
+        <label for="subscribe_pink">Розовый</label>
+        <input type="checkbox" name="form-color" id="subscribe_orange">
+        <label for="subscribe_orange">Оранжевый</label>
       </fieldset>
-      <fieldset class="main__form-initials">
+      <fieldset class="order-knitting__form-initials order-knitting-form-initials">
         <legend>Имя:</legend>
-        <input class="main__name-form" type="text" id="name" required placeholder="Введите ваше имя*">
+        <input class="order-knitting-form-initials__name-form" type="text" id="name" required
+          placeholder="Введите ваше имя*">
         <label for="second-name">Фамилия:</label>
-        <input class="main__second-name-form" id="second-name" type="text" required placeholder="Укажите фамилию*">
+        <input class="order-knitting-form-initials__second-name-form" id="second-name" type="text" required
+          placeholder="Укажите фамилию*">
         <label for="father-name">Отчество:</label>
-        <input class="main__father-name-form" id="father-name" type="text" placeholder="Отчество, если желаете">
+        <input class="order-knitting-form-initials__father-name-form" id="father-name" type="text"
+          placeholder="Отчество, если желаете">
       </fieldset>
-      <fieldset class="main__tel-form">
+      <fieldset class="order-knitting__tel-form order-knitting-tel-form">
         <legend>Тел</legend>
-        <p class="main__svg-block-form"> <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required
-            placeholder="+7 ХХХ ХХХ ХХ ХХ*"><svg></svg></p>
+        <p class="order-knitting-tel-form__svg-block-form"> <input type="tel" name="tel"
+            pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required placeholder="+7 ХХХ ХХХ ХХ ХХ*"><svg></svg></p>
       </fieldset>
-      <fieldset class="main__email-form">
+      <fieldset class="order-knitting__email-form order-knitting-email-form">
         <legend>Email</legend>
-        <p class="main__svg-block-form"> <input type="email" name="email" required placeholder="Ваш Email*"><svg></svg>
+        <p class="order-knitting-email-form__svg-block-form"> <input type="email" name="email" required
+            placeholder="Ваш Email*"><svg></svg>
         </p>
       </fieldset>
-      <fieldset class="main__comment-textarea">
+      <fieldset class="order-knitting__comment-textarea order-knitting-comment-textarea">
         <legend>Доп</legend>
         <textarea name="comment" id="comment-field" rows="9">Опишите все ваши пожелания к заказу</textarea>
       </fieldset>
-      <p class="main__note-form">*Поля обязательны для заполнения</p>
+      <p class="order-knitting__note-form">*Поля обязательны для заполнения</p>
       <input type="submit" value="Отправить заказ">
     </form>
   </main>
-  <footer class="body__footer">
-    <section class="footer__comunication">
-      <div class="communication__wraper">
-        <h2 class="comunication__title">Контакты</h2>
-        <p class="comunication__email">e-mail:</p>
-        <p class="comunication__name-email">info@mimimishkashop.ru</p>
-        <p class="comunication__address-shop">адрес:</p>
-        <p class="comunication__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8 офис 101</p>
-        <div class="comunication__map"></div>
+  <footer class="footer">
+    <section class="footer__comunication footer-comunication">
+      <div class="footer-comunication__wraper footer-comunication-wraper">
+        <h2 class="footer-comunication-wraper__title">Контакты</h2>
+        <p class="footer-comunication-wraper__email">e-mail:</p>
+        <p class="footer-comunication-wraper__name-email">info@mimimishkashop.ru</p>
+        <p class="footer-comunication-wraper__address-shop">адрес:</p>
+        <p class="footer-comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
+          19/8 офис 101</p>
+        <div class="footer-comunication-wraper__map"></div>
         <input type="submit" value="Напишите нам">
       </div>
     </section>
-    <section class="footer__socials-icon">
+    <section class="footer__socials-icon footer-socials-icon">
       <h2 class="visually-hidden">Контакты в социальных сетях</h2>
-      <ul class="socials-icon__list">
-        <li class="socials-icon__item">
-          <a class="socials-icon__link" href="#!" target="_blank">VK</a>
+      <ul class="footer-socials-icon__list footer-socials-icon-list">
+        <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+          <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">VK</a>
         </li>
-        <li class="socials-icon__item">
-          <a class="socials-icon__link" href="#!" target="_blank">Facebook</a>
+        <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+          <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Facebook</a>
         </li>
-        <li class="socials-icon__item">
-          <a class="socials-icon__link" href="#!" target="_blank">Twitter</a>
+        <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+          <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Twitter</a>
         </li>
       </ul>
     </section>
-    <section class="footer__copyright">
+    <section class="footer__copyright footer-copyright">
       <h2 class="visually-hidden">Авторы проекта</h2>
-      <h3 class="copyright__title"> Разработано</h3>
-      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
+      <h3 class="footer-copyright__title"> Разработано</h3>
+      <a class="footer-copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
       </a>
     </section>
   </footer>

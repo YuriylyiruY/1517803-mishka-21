@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
@@ -8,69 +9,70 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<header class="body__header">
-  <a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
+<header class="header">
+  <a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
       alt="логотип Мишка»"></a>
   <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-  <nav class="header__nav">
-    <ul class="header__list">
-      <li class="header__item"><a class="header__link--logo" href="index.html"><img src="img/mishka-logo.svg" width="86"
+  <nav class="header__nav header-nav">
+    <ul class="header-nav__list">
+      <li class="header-nav__item"><a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86"
             height="35" alt="логотип Мишка»"></a>
-        <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <button class="header-nav__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть
+            меню</span></button>
       </li>
-      <li class="header__item">
-        <a class="header__link" href="catalog.html">
+      <li class="header-nav__item header-nav-item">
+        <a class="header-nav-item__link" href="catalog.html">
           Каталог товаров
         </a>
       </li>
-      <li class="header__item">
-        <a class="header__link" href="form.html">
+      <li class="header-nav__item header-nav-item">
+        <a class="header-nav-item__link" href="form.html">
           Вязание на заказ
         </a>
       </li>
-      <li class="header__item"><input type="search" name="" id=""></li>
-      <div class="header__wrap-basket">
-        <p class="header__basket">Корзина:</p>
-        <span class="header__basket-result"> пока пуста</span>
-      </div>
+      <li class="header-nav__item"><input type="search" name="search" id="search"></li>
     </ul>
+    <div class="header-nav__wrap-basket header-nav-wrap-basket">
+      <p class="header-nav-wrap-basket__basket">Корзина:</p>
+      <span class="header-nav-wrap-basket__basket-result"> пока пуста</span>
+    </div>
   </nav>
 </header>
-<main class="body__main">
-  <h1 class="main__title">Каталог товаров"</h1>
-  <ul class="main__goods-list">
-    <li class="main__goods-item">
-      <a class="main__image-goods"><img></a>
-      <a class="main__link-goods">Зайчик-попрыгайчик</a>
-      <p class="main__disсription-goods">Рост 30 см, вес 200 г</p>
-      <p class="main__price-goods">1200p.</p>
-      <button class="main__button-order-form" type="button"><img></button>
+<main class="main">
+  <h1 class="title">Каталог товаров"</h1>
+  <ul class="goods-list">
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <a class="goods-list-goods-item__image-goods"><img src="" alt="Игрушка зайчика"></a>
+      <a class="goods-list-goods-item__link-goods">Зайчик-попрыгайчик</a>
+      <p class="goods-list-goods-item__disсription-goods">Рост 30 см, вес 200 г</p>
+      <p class="goods-list-goods-item__price-goods">1200p.</p>
+      <button class="goods-list-goods-item__button-order-form" type="button"><img></button>
     </li>
-    <li class="main__goods-item">
-      <a class="main__image-goods"><img></a>
-      <a class="main__link-goods">Корзинка для белья</a>
-      <p class="main__disсription-goods">Диаметр 15 см, высота 10 см</p>
-      <p class="main__price-goods">690p.</p>
-      <button class="main__button-order-form" type="button"><img></button>
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <a class="goods-list-goods-item__image-goods"><img src="" alt=""></a>
+      <a class="goods-list-goods-item__link-goods">Корзинка для белья</a>
+      <p class="goods-list-goods-item__disсription-goods">Диаметр 15 см, высота 10 см</p>
+      <p class="goods-list-goods-item__price-goods">690p.</p>
+      <button class="goods-list-goods-item__button-order-form" type="button"><img src="" alt=""></button>
     </li>
-    <li class="main__goods-item">
-      <a class="main__image-goods"><img></a>
-      <a class="main__link-goods">Большая корзинка для игрушек</a>
-      <p class="main__disсription-goods">Диаметр 30 см, высота 30 см</p>
-      <p class="main__price-goods">1500p.</p>
-      <button class="main__button-order-form" type="button"><img></button>
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <a class="goods-list-goods-item__image-goods"><img src="" alt=""></a>
+      <a class="goods-list-goods-item__link-goods">Большая корзинка для игрушек</a>
+      <p class="goods-list-goods-item__disсription-goods">Диаметр 30 см, высота 30 см</p>
+      <p class="goods-list-goods-item__price-goods">1500p.</p>
+      <button class="goods-list-goods-item__button-order-form" type="button"><img src="" alt=""></button>
     </li>
-    <li class="main__goods-item">
-      <p class="main__image-goods main__video-produce-goods">Процесс производства</p>
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <p class="goods-list-goods-item__video-produce-goods">Процесс производства</p>
       <video>
         <source src="URL">
       </video>
-      <p class="main__discription-video">По просьбам наших любимых фолловеров мы сняли для
+      <p class="goods-list-goods-item__discription-video">По просьбам наших любимых фолловеров мы сняли для
         вас подробное видео о том, как появляются наши товары.</p>
     </li>
   </ul>
-  <form class="week-goods__order-form week-goods__order--active">
-    <legend class="week-goods__order-title">Добавить в корзину</legend>
+  <form class="week-goods week-goods">
+    <p class="week-goods__order-title">Добавить в корзину</p>
     <fieldset class="week-goods__choose"> Выберите размер
       <label><input type="checkbox" checked>S</label>
       <label><input type="checkbox">M</label>
@@ -80,36 +82,37 @@
   </form>
   <input type="submit" value="Сделать заказ">
 </main>
-<footer class="body__footer">
-  <section class="footer__comunication">
-    <div class="communication__wraper">
-      <h2 class="comunication__title">Контакты</h2>
-      <p class="comunication__email">e-mail:</p>
-      <p class="comunication__name-email">info@mimimishkashop.ru</p>
-      <p class="comunication__address-shop">адрес:</p>
-      <p class="comunication__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8 офис 101</p>
-      <div class="comunication__map"></div>
+<footer class="footer">
+  <section class="footer__comunication footer-comunication">
+    <div class="footer-comunication__wraper footer-comunication-wraper">
+      <h2 class="footer-comunication-wraper__title">Контакты</h2>
+      <p class="footer-comunication-wraper__email">e-mail:</p>
+      <p class="footer-comunication-wraper__name-email">info@mimimishkashop.ru</p>
+      <p class="footer-comunication-wraper__address-shop">адрес:</p>
+      <p class="footer-comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
+        19/8 офис 101</p>
+      <div class="footer-comunication-wraper__map"></div>
       <input type="submit" value="Напишите нам">
     </div>
   </section>
-  <section class="footer__socials-icon">
+  <section class="footer__socials-icon footer-socials-icon">
     <h2 class="visually-hidden">Контакты в социальных сетях</h2>
-    <ul class="socials-icon__list">
-      <li class="socials-icon__item">
-        <a class="socials-icon__link" href="#!" target="_blank">VK</a>
+    <ul class="footer-socials-icon__list footer-socials-icon-list">
+      <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+        <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">VK</a>
       </li>
-      <li class="socials-icon__item">
-        <a class="socials-icon__link" href="#!" target="_blank">Facebook</a>
+      <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+        <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Facebook</a>
       </li>
-      <li class="socials-icon__item">
-        <a class="socials-icon__link" href="#!" target="_blank">Twitter</a>
+      <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+        <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Twitter</a>
       </li>
     </ul>
   </section>
-  <section class="footer__copyright">
+  <section class="footer__copyright footer-copyright">
     <h2 class="visually-hidden">Авторы проекта</h2>
-    <h3 class="copyright__title"> Разработано</h3>
-    <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
+    <h3 class="footer-copyright__title"> Разработано</h3>
+    <a class="footer-copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
     </a>
   </section>
 </footer>
