@@ -9,69 +9,110 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <header class="header">
   <a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
-          alt="логотип Мишка»"></a>
+      alt="логотип Мишка»"></a>
   <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
   <nav class="header__nav header-nav">
-      <ul class="header-nav__list">
-          <li class="header-nav__item"><a class="header__link" href="index.html"><img src="img/mishka-logo.svg"
-                      width="86" height="35" alt="логотип Мишка»"></a>
-              <button class="header-nav__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть
-                      меню</span></button>
-          </li>
-          <li class="header-nav__item header-nav-item">
-              <a class="header-nav-item__link" href="catalog.html">
-                  Каталог товаров
-              </a>
-          </li>
-          <li class="header-nav__item header-nav-item">
-              <a class="header-nav-item__link" href="form.html">
-                  Вязание на заказ
-              </a>
-          </li>
-          <li class="header-nav__item"><input type="search" name="search" id="search"></li>
-      </ul>
-      <div class="header-nav__wrap-basket header-nav-wrap-basket">
-          <p class="header-nav-wrap-basket__basket">Корзина:</p>
-          <span class="header-nav-wrap-basket__basket-result"> пока пуста</span>
-      </div>
+    <ul class="header-nav__list">
+      <li class="header-nav__item"><a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86"
+            height="35" alt="логотип Мишка»"></a>
+        <button class="header-nav__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть
+            меню</span></button>
+      </li>
+      <li class="header-nav__item header-nav-item">
+        <a class="header-nav-item__link" href="catalog.html">
+          Каталог товаров
+        </a>
+      </li>
+      <li class="header-nav__item header-nav-item">
+        <a class="header-nav-item__link" href="form.html">
+          Вязание на заказ
+        </a>
+      </li>
+      <li class="header-nav__item"><input type="search" name="search" id="search"></li>
+    </ul>
+    <div class="header-nav__wrap-basket header-nav-wrap-basket">
+      <p class="header-nav-wrap-basket__basket">Корзина:</p>
+      <span class="header-nav-wrap-basket__basket-result"> пока пуста</span>
+    </div>
   </nav>
 </header>
-
-
+<main class="main">
+  <h1 class="title">Каталог товаров"</h1>
+  <ul class="goods-list">
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <a class="goods-list-goods-item__image-goods"><img src="" alt="Игрушка зайчика"></a>
+      <a class="goods-list-goods-item__link-goods">Зайчик-попрыгайчик</a>
+      <p class="goods-list-goods-item__disсription-goods">Рост 30 см, вес 200 г</p>
+      <p class="goods-list-goods-item__price-goods">1200p.</p>
+      <button class="goods-list-goods-item__button-order-form" type="button"><img></button>
+    </li>
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <a class="goods-list-goods-item__image-goods"><img src="" alt=""></a>
+      <a class="goods-list-goods-item__link-goods">Корзинка для белья</a>
+      <p class="goods-list-goods-item__disсription-goods">Диаметр 15 см, высота 10 см</p>
+      <p class="goods-list-goods-item__price-goods">690p.</p>
+      <button class="goods-list-goods-item__button-order-form" type="button"><img src="" alt=""></button>
+    </li>
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <a class="goods-list-goods-item__image-goods"><img src="" alt=""></a>
+      <a class="goods-list-goods-item__link-goods">Большая корзинка для игрушек</a>
+      <p class="goods-list-goods-item__disсription-goods">Диаметр 30 см, высота 30 см</p>
+      <p class="goods-list-goods-item__price-goods">1500p.</p>
+      <button class="goods-list-goods-item__button-order-form" type="button"><img src="" alt=""></button>
+    </li>
+    <li class="goods-list__goods-item goods-list-goods-item">
+      <p class="goods-list-goods-item__video-produce-goods">Процесс производства</p>
+      <video>
+        <source src="URL">
+      </video>
+      <p class="goods-list-goods-item__discription-video">По просьбам наших любимых фолловеров мы сняли для
+        вас подробное видео о том, как появляются наши товары.</p>
+    </li>
+  </ul>
+  <form class="week-goods week-goods">
+    <p class="week-goods__order-title">Добавить в корзину</p>
+    <fieldset class="week-goods__choose"> Выберите размер
+      <label><input type="checkbox" checked>S</label>
+      <label><input type="checkbox">M</label>
+      <label><input type="checkbox">L</label>
+    </fieldset>
+    <input type="submit" value="Добавить">
+  </form>
+  <input type="submit" value="Сделать заказ">
+</main>
 <footer class="footer">
   <section class="footer__comunication footer-comunication">
-      <div class="footer-comunication__wraper footer-comunication-wraper">
-          <h2 class="footer-comunication-wraper__title">Контакты</h2>
-          <p class="footer-comunication-wraper__email">e-mail:</p>
-          <p class="footer-comunication-wraper__name-email">info@mimimishkashop.ru</p>
-          <p class="footer-comunication-wraper__address-shop">адрес:</p>
-          <p class="footer-comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
-              19/8 офис 101</p>
-          <div class="footer-comunication-wraper__map"></div>
-          <input type="submit" value="Напишите нам">
-      </div>
+    <div class="footer-comunication__wraper footer-comunication-wraper">
+      <h2 class="footer-comunication-wraper__title">Контакты</h2>
+      <p class="footer-comunication-wraper__email">e-mail:</p>
+      <p class="footer-comunication-wraper__name-email">info@mimimishkashop.ru</p>
+      <p class="footer-comunication-wraper__address-shop">адрес:</p>
+      <p class="footer-comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
+        19/8 офис 101</p>
+      <div class="footer-comunication-wraper__map"></div>
+      <input type="submit" value="Напишите нам">
+    </div>
   </section>
   <section class="footer__socials-icon footer-socials-icon">
-      <h2 class="visually-hidden">Контакты в социальных сетях</h2>
-      <ul class="footer-socials-icon__list footer-socials-icon-list">
-          <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
-              <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">VK</a>
-          </li>
-          <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
-              <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Facebook</a>
-          </li>
-          <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
-              <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Twitter</a>
-          </li>
-      </ul>
+    <h2 class="visually-hidden">Контакты в социальных сетях</h2>
+    <ul class="footer-socials-icon__list footer-socials-icon-list">
+      <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+        <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">VK</a>
+      </li>
+      <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+        <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Facebook</a>
+      </li>
+      <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
+        <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Twitter</a>
+      </li>
+    </ul>
   </section>
   <section class="footer__copyright footer-copyright">
-      <h2 class="visually-hidden">Авторы проекта</h2>
-      <h3 class="footer-copyright__title"> Разработано</h3>
-      <a class="footer-copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
-      </a>
+    <h2 class="visually-hidden">Авторы проекта</h2>
+    <h3 class="footer-copyright__title"> Разработано</h3>
+    <a class="footer-copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
+    </a>
   </section>
 </footer>
