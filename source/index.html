@@ -11,36 +11,33 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
-        alt="логотип Мишка»"></a>
-    <button class="header__nav-toggle-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="header__nav header-nav">
       <ul class="header-nav__list">
         <li class="header-nav__item"><a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86"
               height="35" alt="логотип Мишка»"></a>
-          <button class="header-nav__nav-toggle-open" type="button"><span class="visually-hidden">Закрыть
+          <button class="header-nav__nav-toggle" type="button"><span class="visually-hidden">Закрыть
               меню</span></button>
         </li>
-        <li class="header-nav__item header-nav-item">
-          <a class="header-nav-item__link" href="catalog.html">
+        <li class="header-nav__item header-item">
+          <a class="header-item__link" href="catalog.html">
             Каталог товаров
           </a>
         </li>
-        <li class="header-nav__item header-nav-item">
-          <a class="header-nav-item__link" href="form.html">
+        <li class="header-nav__item header-item">
+          <a class="header-item__link" href="form.html">
             Вязание на заказ
           </a>
         </li>
         <li class="header-nav__item"><input type="search" name="search" id="search"></li>
       </ul>
-      <div class="header-nav__wrap-basket header-nav-wrap-basket">
-        <p class="header-nav-wrap-basket__basket">Корзина:</p>
-        <span class="header-nav-wrap-basket__basket-result"> пока пуста</span>
+      <div class="header-nav__wrap-basket wrap-basket">
+        <p class="wrap-basket__basket">Корзина:</p>
+        <span class="wrap-basket__result"> пока пуста</span>
       </div>
     </nav>
   </header>
   <main class="main">
-    <section class="big-pic">
+    <section class="promo-pic">
     </section>
     <section class="shop-goods">
       <h1 class="visually-hidden"> Товары магазина</h1>
@@ -50,9 +47,9 @@
     </section>
     <section class="week-goods">
       <div class="week-goods__wraper week-goods-wraper">
-        <h2 class="week-goods-wraper__name-goods">Вязаные корзинки</h2>
+        <h2 class="week-goods-wraper__name">Вязаные корзинки</h2>
         <h3 class="week-goods-wraper__title"> Товар недели</h3>
-        <p class="week-goods-wraper__descraiption-goods">Экологически чистая пряжа,ручная работа.
+        <p class="week-goods-wraper__descraiption">Экологически чистая пряжа,ручная работа.
           Доступны в шести расцветках,и трех размерах.</p>
         <p class="week-goods-wraper__property">Цвет:</p>
         <p class="week-goods-wraper__description-property">«Тифани»/серый</p>
@@ -65,9 +62,9 @@
         <input type="submit" value="Заказать">
       </div>
 
-      <form class="week-goods__order-form week-goods-order-form">
-        <p class="week-goods-order-form__order-title">Добавить в корзину</p>
-        <fieldset class="week-goods-order-form__choose"> Выберите размер
+      <form class="week-goods__order-form order-form">
+        <p class="order-form__order-title">Добавить в корзину</p>
+        <fieldset class="order-form__choose"> Выберите размер
           <label><input type="checkbox" checked>S</label>
           <label><input type="checkbox">M</label>
           <label><input type="checkbox">L</label>
@@ -116,36 +113,36 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="footer__comunication footer-comunication">
-      <div class="footer-comunication__wraper footer-comunication-wraper">
-        <h2 class="footer-comunication-wraper__title">Контакты</h2>
-        <p class="footer-comunication-wraper__email">e-mail:</p>
-        <p class="footer-comunication-wraper__name-email">info@mimimishkashop.ru</p>
-        <p class="footer-comunication-wraper__address-shop">адрес:</p>
-        <p class="footer-comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
+    <section class="comunication">
+      <div class="comunication__wraper comunication-wraper">
+        <h2 class="comunication-wraper__title">Контакты</h2>
+        <p class="comunication-wraper__email">e-mail:</p>
+        <p class="comunication-wraper__name-email">info@mimimishkashop.ru</p>
+        <p class="comunication-wraper__address">адрес:</p>
+        <p class="comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
           19/8 офис 101</p>
-        <div class="footer-comunication-wraper__map"></div>
+        <div class="comunication-wraper__map"></div>
         <input type="submit" value="Напишите нам">
       </div>
     </section>
-    <section class="footer__socials-icon footer-socials-icon">
+    <section class="footer__socials-icon socials-icon">
       <h2 class="visually-hidden">Контакты в социальных сетях</h2>
-      <ul class="footer-socials-icon__list footer-socials-icon-list">
-        <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
-          <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">VK</a>
+      <ul class="socials-icon__list icon-list">
+        <li class="icon-list__item icon-item">
+          <a class="icon-item__link" href="#!" target="_blank">VK</a>
         </li>
-        <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
-          <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Facebook</a>
+        <li class="icon-list__item icon-item">
+          <a class="icon-item__link" href="#!" target="_blank">Facebook</a>
         </li>
-        <li class="footer-socials-icon-list__item footer-socials-icon-list-item">
-          <a class="footer-socials-icon-list-item__link" href="#!" target="_blank">Twitter</a>
+        <li class="icon-list__item icon-item">
+          <a class="icon-item__link" href="#!" target="_blank">Twitter</a>
         </li>
       </ul>
     </section>
-    <section class="footer__copyright footer-copyright">
+    <section class="copyright">
       <h2 class="visually-hidden">Авторы проекта</h2>
-      <h3 class="footer-copyright__title"> Разработано</h3>
-      <a class="footer-copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
+      <h3 class="copyright__title"> Разработано</h3>
+      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
       </a>
     </section>
   </footer>
