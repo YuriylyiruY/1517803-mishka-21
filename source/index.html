@@ -13,9 +13,9 @@
   <header class="header">
     <nav class="header__nav header-nav">
       <ul class="header-nav__list">
-        <li class="header-nav__item"><a class="header__link" href="index.html"><img src="img/mishka-logo.svg" width="86"
-              height="35" alt="логотип Мишка»"></a>
-          <button class="header-nav__nav-toggle" type="button"><span class="visually-hidden">Закрыть
+        <li class="header-nav__item header-nav-item"><a class="header__link" href="index.html"><img
+              src="img/mishka-logo.svg" width="86" height="35" alt="логотип Мишка»"></a>
+          <button class="header-nav__nav-toggle visually-hidden" type="button"><span>Закрыть
               меню</span></button>
         </li>
         <li class="header-nav__item header-item">
@@ -28,7 +28,9 @@
             Вязание на заказ
           </a>
         </li>
-        <li class="header-nav__item"><input type="search" name="search" id="search"></li>
+        <li class="header-nav__item search-result"><input class="search-result__enter" type="search" name="search"
+            id="search" value="Поиск по сайту">
+        </li>
       </ul>
       <div class="header-nav__wrap-basket wrap-basket">
         <p class="wrap-basket__basket">Корзина:</p>
@@ -37,7 +39,8 @@
     </nav>
   </header>
   <main class="main">
-    <section class="promo-pic">
+    <section class="promo-pic"> <img class="promo-pic__text" src="img/text.svg"
+        alt="Изображение изделий на фоне игрушечного домика">
     </section>
     <section class="shop-goods">
       <h1 class="visually-hidden"> Товары магазина</h1>
@@ -49,8 +52,8 @@
       <div class="week-goods__wraper week-goods-wraper">
         <h2 class="week-goods-wraper__name">Вязаные корзинки</h2>
         <h3 class="week-goods-wraper__title"> Товар недели</h3>
-        <p class="week-goods-wraper__descraiption">Экологически чистая пряжа,ручная работа.
-          Доступны в шести расцветках,и трех размерах.</p>
+        <p class="week-goods-wraper__descraiption">Экологически чистая пряжа, <br> ручная работа.
+          Доступны в шести расцветках, и трех размерах.</p>
         <p class="week-goods-wraper__property">Цвет:</p>
         <p class="week-goods-wraper__description-property">«Тифани»/серый</p>
         <p class="week-goods-wraper__property">Диаметр:</p>
@@ -59,7 +62,7 @@
         <p class="week-goods-wraper__description-property">15см</p>
         <div class="week-goods-wraper__pic"></div>
         <p class="week-goods-wraper__price">Цена: 990 руб.</p>
-        <input type="submit" value="Заказать">
+        <input class="week-goods-wraper__submit" type="submit" value="Заказать">
       </div>
 
       <form class="week-goods__order-form order-form">
@@ -73,15 +76,15 @@
       </form>
     </section>
     <section class="advantages">
-      <h2 class="visualle-hidden">Преимущества товаров Мишка</h2>
+      <h2 class="visually-hidden">Преимущества товаров Мишка</h2>
       <h3 class="advantages__title">Коротко о нас:</h3>
       <ul class="advantages__list advantages-list">
         <li class="advantages-list__descraption">Экологически чистые материалы</li>
         <li class="advantages-list__descraption">Скандинавский стиль по российской цене</li>
         <li class="advantages-list__descraption">Увеличивает лайки на фотографиях</li>
-        <li class="advantages-list__descraption">Связано вручную с любовью и умилением</li>
+        <li class="advantages-list__descraption">Связано вручную <br> с любовью и умилением</li>
         <li class="advantages-list__descraption">Поддержка отечественного производителя</li>
-        <li class="advantages-list__descraption">Поставляется в подарочной упаковке</li>
+        <li class="advantages-list__descraption">Поставляется <br>в подарочной упаковке</li>
       </ul>
     </section>
     <section class="comment">
@@ -95,19 +98,22 @@
         </p>
         <p class="comment-wraper__autor">Анастасия Красильникова </p>
         <p class="comment-wraper__autor-address">@misssssiskras</p>
-        <label class="comment-wraper__button-left-direction"> <button type="button">
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
-            </svg>
-          </button>
-        </label>
-        <label class="comment-wraper__button-right-direction"> <button type="button">
-            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
-            </svg>
-          </button>
-        </label>
-        <label class="comment-wraper__send-comment"><input type="submit" value="Написать">
+        <div class="comment-wraper__button button-direction">
+          <label class="button-direction__left btn"> <button class="btn__style" type="button">
+              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+              </svg>
+            </button>
+          </label>
+          <label class="button-direction__right btn"> <button class="btn__style" type="button">
+              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
+              </svg>
+            </button>
+          </label>
+        </div>
+        <label class="comment-wraper__send-comment write-comment"><input class="write-comment__btn" type="submit"
+            value="Написать">
         </label>
       </div>
     </section>
@@ -119,10 +125,10 @@
         <p class="comunication-wraper__email">e-mail:</p>
         <p class="comunication-wraper__name-email">info@mimimishkashop.ru</p>
         <p class="comunication-wraper__address">адрес:</p>
-        <p class="comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
+        <p class="comunication-wraper__show-address-shop">г. Санкт-Петербург <br>ул. Большая Конюшенная <br> д.
           19/8 офис 101</p>
         <div class="comunication-wraper__map"></div>
-        <input type="submit" value="Напишите нам">
+        <input class="comunication-wraper__submit" type="submit" value="Напишите нам">
       </div>
     </section>
     <section class="footer__socials-icon socials-icon">
