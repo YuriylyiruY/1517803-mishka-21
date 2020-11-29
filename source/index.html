@@ -7,13 +7,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="body">
   <header class="header">
     <nav class="header__nav header-nav">
-      <ul class="header-nav__list">
-        <li class="header-nav__item header-nav-item"><a class="header__link" href="index.html"><img
+      <ul class="header-nav__list-up">
+        <li class="header-nav__item header-nav-item"><a class="header__link-logo" href="index.html"><img
               src="img/mishka-logo.svg" width="86" height="35" alt="логотип Мишка»"></a>
           <button class="header-nav__nav-toggle visually-hidden" type="button"><span>Закрыть
               меню</span></button>
@@ -28,14 +29,16 @@
             Вязание на заказ
           </a>
         </li>
-        <li class="header-nav__item search-result"><input class="search-result__enter" type="search" name="search"
-            id="search" value="Поиск по сайту">
-        </li>
       </ul>
-      <div class="header-nav__wrap-basket wrap-basket">
-        <p class="wrap-basket__basket">Корзина:</p>
-        <span class="wrap-basket__result"> пока пуста</span>
-      </div>
+        <ul class="header-nav__list-down">
+          <li class="header-nav__item search-result"><input class="search-result__enter" type="text" name="search"
+              id="search" value="Поиск по сайту">
+          </li>
+          <li class="header-nav__wrap-basket wrap-basket">
+            <p class="wrap-basket__basket">Корзина:</p>
+            <span class="wrap-basket__result"> пока пуста</span>
+          </li>
+        </ul>
     </nav>
   </header>
   <main class="main">
