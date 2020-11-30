@@ -6,7 +6,7 @@
   line-height: 24px;
 }
 
-.week-goods-wraper__name {
+.week-goods__name {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -14,7 +14,7 @@
   padding: 31px 31px 0 31px;
 }
 
-.week-goods-wraper__title {
+.week-goods__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -69,4 +69,25 @@
 
 .order-form {
   display: none;
+}
+@media(min-width:@tablet-width){
+.week-goods{
+  display:flex;
+  flex-wrap: wrap;
+}
+.week-goods__name{
+  display:flex;
+  height:100px;
+  width:400px;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+.week-goods__title{
+  display: flex;
+  align-items: flex-end;
+}
+.week-goods-wraper{
+  width:50%;
+}
 }
