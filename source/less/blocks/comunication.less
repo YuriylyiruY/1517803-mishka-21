@@ -43,8 +43,38 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #444444;
-  width: 100%;
+  width: 260px;
   padding: 10px 0;
   background-color: transparent;
   border: 2px solid #444444;
+}
+
+.footer-mishka {
+  display: none;
+}
+
+
+@media(min-width:@tablet-width) {
+
+  .comunication-wraper__name-email {
+    width: 200px;
+  }
+
+  .comunication-wraper__address {
+    width: 100px;
+  }
+
+  .comunication-wraper__show-address-shop {
+    width: 200px;
+  }
+
+  .comunication-wraper__submit {
+    margin-left: 240px;
+  }
+  .footer-mishka{display:block;}
+  .footer{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
 }

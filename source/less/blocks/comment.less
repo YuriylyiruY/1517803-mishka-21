@@ -41,7 +41,7 @@
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  width: 50%;
+  width: 160px;
   border: 1px solid #ececec;
 }
 
@@ -58,6 +58,24 @@
   color: #444444;
   background-color: transparent;
   padding: 10px 0;
-  width: 100%;
+  width: 260px;
   border: 2px solid #444444;
+}
+
+@media(min-width:@tablet-width) {
+  .button-direction {
+    position: relative;
+    left: 370px;
+    bottom: 70px;
+  }
+
+  .write-comment__btn {
+    position: relative;
+    left: 435px;
+    bottom: 340px;
+  }
+  .comment{
+    background-image: url(../img/yarn.png);
+    background-repeat: no-repeat;
+  }
 }
