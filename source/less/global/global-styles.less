@@ -42,11 +42,18 @@ body {
 }
 
 @tablet-width: 765px;
-@desctop-width: 1500px;
+@desctop-width: 1150px;
 
-@media(min-width:@tablet-width){
+@media(min-width:@tablet-width) {
   body {
     width: 765px;
-margin:0 50px;
+    margin: 0 50px;
+  }
+}
+
+@media(min-width:@desctop-width) {
+  body {
+    width: 1150px;
+    margin: 0 50px;
   }
 }

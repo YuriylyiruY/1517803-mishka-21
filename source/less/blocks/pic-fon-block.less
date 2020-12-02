@@ -1,14 +1,55 @@
 .promo-pic {
+  display: flex;
   background-image: url("../img/mishka-fon.svg");
   background-repeat: no-repeat;
   min-height: 300px;
-  min-width: 392px;
+  min-width: 320px;
+  justify-content: center;
+  align-items: center;
 }
-@media(min-width:@tablet-width){
+
+.promo-pic-tablet {
+  display: none;
+}
+
+.promo-pic-desctop {
+  display: none;
+}
+
+@media(min-width:@tablet-width) {
   .promo-pic {
+    display: none;
+
+  }
+
+  .promo-pic-desctop {
+    display: none;
+  }
+
+  .promo-pic-tablet {
+    display: flex;
     background-image: url("../img/hero-tablet.svg");
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
     min-height: 746px;
-  min-width: 1150px;
+    min-width: 765px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media(min-width:@desctop-width) {
+  .promo-pic-desctop {
+    display: flex;
+    background-image: url("../img/hero1.svg");
+    background-repeat: no-repeat;
+    min-height: 746px;
+    min-width: 1150px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .promo-pic-tablet {
+    display: none;
   }
 }
