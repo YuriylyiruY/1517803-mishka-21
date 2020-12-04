@@ -10,7 +10,8 @@
   color: #000000;
 }
 
-.advantages-list {
+.advantages-list,
+.advantages-list-down {
 
   list-style: none;
 }
@@ -22,20 +23,16 @@
   padding-top: 50px;
 }
 
-@media(min-width:@tablet-width) {
+.advantages-list-down__descraption {
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 50px;
+}
+
+@media (min-width: @tablet-width) {
   .advantages {
     display: flex;
-  }
-
-  .advantage__title {}
-
-  .advantages-list-2 {
-
-    list-style: none;
-  }
-
-  .advantages-list {
-
   }
 
   .advantages-list__descraption {

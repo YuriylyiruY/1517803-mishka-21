@@ -36,7 +36,7 @@
   width: 50%;
 }
 
-.week-goods-wraper__pic {
+.week-goods__pic {
   background-image: url("../img/triple-set.svg");
   background-repeat: no-repeat;
   min-height: 300px;
@@ -71,45 +71,83 @@
   display: none;
 }
 
-@media(min-width:@tablet-width){
-.week-goods{
-  display:flex;
-  //flex-wrap: nowrap;
-}
-.week-goods__name{
-  display:flex;
-  height:100px;
-  width:400px;
-  align-items: center;
-  justify-content: flex-start;
+@media (min-width: @tablet-width) {
+  .week-goods {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-}
-.week-goods__title{
-  display: flex;
-  //align-items: flex-end;
-  order:1;
+  .week-goods__name {
+    display: flex;
+    height: 100px;
+    font-size: 43px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
 
-}
-.week-goods-wraper{
-  width:50%;
-}
-}
-@media(min-width:@desctop-width){
+  .week-goods__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
 
-  .week-goods-wraper__pic {
+  .week-goods__pic {
+    background-image: url("../img/triple-tablet.svg");
+    background-repeat: no-repeat;
+    min-height: 403px;
+    min-width: 40%;
+  }
+
+  .week-goods-wraper {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .week-goods__pic {
     background-image: url("../img/triple-desktop.svg");
     background-repeat: no-repeat;
     min-height: 636px;
-  width: 525px;
-  position:relative;
-}
-.week-goods{
-  flex-direction: row;
-  flex-wrap:nowrap;
-}
-.week-goods__title{
-display:flex;
-background:red;
-align-items: flex-start;
-}
+    width: 525px;
+    margin-right: 50px;
+    order: 3;
+  }
+
+  .week-goods {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .week-goods__title {
+    display: flex;
+    align-items: flex-start;
+    order: 0;
+  }
+
+  .week-goods__name {
+    order: 1;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .week-goods-wraper {
+    min-width: 80px;
+    margin: 20px;
+    margin-top: 130px;
+    padding-left: 180px;
+    order: 2;
+  }
+
+  .week-goods-wraper__descraiption {
+    padding-left: 50px;
+    margin-bottom: 100px;
+  }
 }
