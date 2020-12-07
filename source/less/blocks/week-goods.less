@@ -1,153 +1,149 @@
-.week-goods-wraper {
+.week-goods {
   display: flex;
+  margin-top: 50px;
   flex-wrap: wrap;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-}
+  justify-content: space-around;
 
-.week-goods__name {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  color: #000000;
-  padding: 31px 31px 0 31px;
-}
-
-.week-goods__title {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #63d1bb;
-  padding: 0 31px 31px 31px;
-}
-
-.week-goods-wraper__descraiption {
-  padding-left: 31px;
-}
-
-.week-goods-wraper__property {
-  width: 30%;
-  padding-left: 31px;
-}
-
-.week-goods-wraper__description-property {
-  width: 50%;
-}
-
-.week-goods__pic {
-  background-image: url("../img/triple-set.svg");
-  background-repeat: no-repeat;
-  min-height: 300px;
-  width: 320px;
-  margin-left: 20px;
-}
-
-.week-goods-wraper__price {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  padding-top: 26px;
-  width: 100%;
-}
-
-.week-goods-wraper__submit {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #444444;
-  background-color: transparent;
-  text-transform: uppercase;
-  border-style: none;
-  width: 260px;
-  height: 52px;
-  margin-left: 31px;
-  border: 2px solid #444444;
-}
-
-.order-form {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .week-goods {
-    display: flex;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .week-goods__name {
-    display: flex;
-    height: 100px;
-    font-size: 43px;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .week-goods__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-  }
-
-  .week-goods__pic {
-    background-image: url("../img/triple-tablet.svg");
-    background-repeat: no-repeat;
-    min-height: 403px;
-    min-width: 40%;
-  }
-
-  .week-goods-wraper {
-    width: 50%;
-  }
-}
-
-@media (min-width: @desctop-width) {
-  .week-goods__pic {
-    background-image: url("../img/triple-desktop.svg");
-    background-repeat: no-repeat;
-    min-height: 636px;
-    width: 525px;
-    margin-right: 50px;
-    order: 3;
-  }
-
-  .week-goods {
+  @media (min-width: @desctop-width) {
     flex-direction: row;
     flex-wrap: nowrap;
   }
 
-  .week-goods__title {
+  &-wraper {
     display: flex;
-    align-items: flex-start;
-    order: 0;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    @media (min-width: @tablet-width) {
+      width: 50%;
+    }
+
+    @media (min-width: @desctop-width) {
+      min-width: 80px;
+      margin: 20px;
+      margin-top: 130px;
+      padding-left: 180px;
+      order: 2;
+    }
+
+    &__descraiption {
+      padding-left: 31px;
+
+      @media (min-width: @desctop-width) {
+        padding-left: 50px;
+        margin-bottom: 100px;
+      }
+    }
+
+    &__property {
+      width: 30%;
+      padding-left: 31px;
+    }
+
+    &__description-property {
+      width: 50%;
+    }
+
+    &__price {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+      text-align: center;
+      padding-top: 26px;
+      width: 100%;
+    }
+
+    &__submit {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      color: #444444;
+      background-color: transparent;
+      text-transform: uppercase;
+      border-style: none;
+      width: 260px;
+      height: 52px;
+      margin-left: 31px;
+      border: 2px solid #444444;
+    }
   }
 
-  .week-goods__name {
-    order: 1;
-    position: absolute;
-    z-index: 3;
+  &__name {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    padding: 31px 31px 0 31px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      height: 100px;
+      font-size: 43px;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: @desctop-width) {
+      order: 1;
+      position: absolute;
+      z-index: 3;
+    }
   }
 
-  .week-goods-wraper {
-    min-width: 80px;
-    margin: 20px;
-    margin-top: 130px;
-    padding-left: 180px;
-    order: 2;
+  &__title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #63d1bb;
+    padding: 0 31px 31px 31px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      margin: 0;
+      padding: 0;
+      margin-left: 20px;
+    }
+
+    @media (min-width: @desctop-width) {
+      display: flex;
+      align-items: flex-start;
+      order: 0;
+    }
   }
 
-  .week-goods-wraper__descraiption {
-    padding-left: 50px;
-    margin-bottom: 100px;
+  &__pic {
+    background-image: url("../img/triple-set.svg");
+    background-repeat: no-repeat;
+    min-height: 300px;
+    width: 320px;
+    margin-left: 20px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/triple-tablet.svg");
+      background-repeat: no-repeat;
+      min-height: 403px;
+      min-width: 40%;
+    }
+
+    @media (min-width: @desctop-width) {
+      background-image: url("../img/triple-desktop.svg");
+      background-repeat: no-repeat;
+      min-height: 636px;
+      width: 525px;
+      margin-right: 50px;
+      order: 3;
+    }
   }
+}
+
+.order-form {
+  display: none;
 }

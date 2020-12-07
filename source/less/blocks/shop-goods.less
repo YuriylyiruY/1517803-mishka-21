@@ -1,12 +1,3 @@
-.shop-goods-interior {
-  background-color: @light-green;
-  width: 100%;
-}
-
-.shop-goods-toys {
-  background-color: @dark-green;
-}
-
 .shop-goods-interior__link,
 .shop-goods-toys__link {
   font-weight: 700;
@@ -18,13 +9,25 @@
   padding: 30px;
 }
 
-@media (min-width: @tablet-width) {
-  .shop-goods {
+.shop-goods {
+  @media (min-width: @tablet-width) {
     display: flex;
   }
 
-  .shop-goods-interior,
-  .shop-goods-toys {
-    width: 50%;
+  &-interior {
+    background-color: @light-green;
+    width: 100%;
+
+    @media (min-width: @tablet-width) {
+      width: 50%;
+    }
+  }
+
+  &-toys {
+    background-color: @dark-green;
+
+    @media (min-width: @tablet-width) {
+      width: 50%;
+    }
   }
 }

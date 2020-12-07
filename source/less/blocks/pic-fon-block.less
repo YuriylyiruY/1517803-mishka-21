@@ -6,26 +6,16 @@
   min-width: 320px;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .promo-pic-tablet {
   display: none;
-}
 
-.promo-pic-desctop {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .promo-pic {
-    display: none;
-  }
-
-  .promo-pic-desctop {
-    display: none;
-  }
-
-  .promo-pic-tablet {
+  @media (min-width: @tablet-width) {
     display: flex;
     background-image: url("../img/hero-tablet.svg");
     background-repeat: no-repeat;
@@ -34,10 +24,20 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media (min-width: @desctop-width) {
+    display: none;
+  }
 }
 
-@media (min-width: @desctop-width) {
-  .promo-pic-desctop {
+.promo-pic-desctop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desctop-width) {
     display: flex;
     background-image: url("../img/hero1.svg");
     background-repeat: no-repeat;
@@ -45,9 +45,5 @@
     min-width: 1150px;
     justify-content: center;
     align-items: center;
-  }
-
-  .promo-pic-tablet {
-    display: none;
   }
 }
