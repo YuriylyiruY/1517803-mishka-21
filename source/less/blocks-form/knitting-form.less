@@ -10,6 +10,10 @@
   color: @light-green;
   padding: 0 15px 0 0;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
 
 .form-type,
@@ -20,6 +24,16 @@
 .comment-textarea {
   border: none;
   border-top: 1px solid #63d1bb;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    margin: 20px 60px;
+  }
 }
 
 .form-type__content,
@@ -39,28 +53,38 @@
   opacity: 0.3;
 }
 
+.form-type {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  height: 110px;
+}
+
 .content-things {
   position: relative;
   display: flex;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  //justify-content: space-between;
+  align-items: center;
+  min-width: 50px;
+  background: red;
+  width: auto;
+  height: 70px;
+  //margin: 20px;
   margin-left: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    background: blue;
+    min-width: 150px;
+    justify-content: center;
+  }
 }
 
 .content-things__input {
   appearance: none;
 }
 
-.content-things__radio-up {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-image: url("../img/radio.svg");
-  background-repeat: no-repeat;
-  right: 190px;
-  bottom: -3px;
-  box-sizing: border-box;
-}
 
 .content-things__radio {
   position: absolute;
@@ -68,11 +92,9 @@
   width: 40px;
   background-image: url("../img/radio.svg");
   background-repeat: no-repeat;
-  right: 190px;
-  bottom: -13px;
+  left: -50px;
 }
 
-.content-things__input:checked + .content-things__radio-up,
 .content-things__input:checked + .content-things__radio {
   height: 40px;
   width: 40px;
@@ -86,18 +108,22 @@
   position: relative;
 }
 
-.form-color__content {
-  margin: 20px;
-  display: flex;
-  margin-left: 50px;
-}
-
 .content-color__input {
   appearance: none;
 }
 
 .content-color {
   position: relative;
+  margin: 20px;
+  display: flex;
+  margin-left: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    background: blue;
+    width: 150px;
+  }
 }
 
 .content-color__checkbox {
