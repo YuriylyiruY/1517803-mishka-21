@@ -13,7 +13,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: @black;
   width: 100%;
 }
 
@@ -42,9 +42,27 @@
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #444444;
-  width: 100%;
+  color: @braun-letters-color;
+  width: 260px;
   padding: 10px 0;
   background-color: transparent;
-  border: 2px solid #444444;
+  border: 2px solid @braun-letters-color;
+}
+
+@media (min-width: @tablet-width) {
+  .comunication-wraper__name-email {
+    width: 200px;
+  }
+
+  .comunication-wraper__address {
+    width: 100px;
+  }
+
+  .comunication-wraper__show-address-shop {
+    width: 200px;
+  }
+
+  .comunication-wraper__submit {
+    margin-left: 240px;
+  }
 }

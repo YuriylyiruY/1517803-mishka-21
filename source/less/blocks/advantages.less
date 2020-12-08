@@ -7,10 +7,11 @@
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @black;
 }
 
-.advantages-list {
+.advantages-list,
+.advantages-list-down {
 
   list-style: none;
 }
@@ -18,6 +19,23 @@
 .advantages-list__descraption {
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: @black;
   padding-top: 50px;
+}
+
+.advantages-list-down__descraption {
+  font-size: 17px;
+  line-height: 20px;
+  color: @black;
+  padding-top: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    display: flex;
+  }
+
+  .advantages-list__descraption {
+    width: 350px;
+  }
 }

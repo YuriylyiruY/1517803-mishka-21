@@ -13,7 +13,7 @@
 
 .page {
   height: 100%;
-  background-color: #c7c7c7;
+  background-color: @background-page-color;
 }
 
 // это оставлю,упрощает разметку
@@ -30,13 +30,22 @@ h6 {
   padding: 0;
 }
 
-body {
-  background-color: #ffffff;
-  color: #444444;
+.body-wraper {
+  background-color: @background-main-color;
+  color: @braun-letters-color;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   width: 320px;
-  margin-left: 200px;
   margin-bottom: 100px;
   margin-top: 100px;
+
+  @media (min-width: @tablet-width) {
+    width: 765px;
+    margin: 0 50px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 1150px;
+    margin: 0 50px;
+  }
 }
