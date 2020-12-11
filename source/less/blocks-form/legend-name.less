@@ -1,0 +1,25 @@
+.legend-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @light-green;
+  padding: 0 15px 0 0;
+  position: relative;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.legend-name__wrap {
+  position: absolute;
+  left: -15px;
+  bottom: -7px;
+  background: @background-main-color;
+  width: 70px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 25px;
+    margin: 0;
+  }
+}
