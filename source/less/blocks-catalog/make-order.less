@@ -1,5 +1,5 @@
-.make-order {
-  margin-left: 31px;
+.make-order__btn {
+  margin-left: 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 16px;
@@ -9,4 +9,21 @@
   width: 260px;
   background-color: transparent;
   border: 2px solid @braun-letters-color;
+
+  @media (min-width: @tablet-width) {
+    width: 705px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 260px;
+    position: absolute;
+    bottom: 100px;
+    left: 741px;
+  }
+}
+
+.make-order {
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
