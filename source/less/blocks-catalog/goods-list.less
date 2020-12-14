@@ -41,57 +41,59 @@
   margin-bottom: 30px;
 }
 
-.img-goods .img-goods__basket {
-  width: 260px;
-  height: 195px;
-  background-image: url("../img/baskets-for-toys.svg");
+.img-goods {
+  &__basket {
+    width: 260px;
+    height: 195px;
+    background-image: url("../img/baskets-for-toys.svg");
 
-  @media (min-width: @tablet-width) {
-    width: 334px;
-    height: 334px;
-    background-image: url("../img/basket-for-toys-tablet.svg");
+    @media (min-width: @tablet-width) {
+      width: 334px;
+      height: 334px;
+      background-image: url("../img/basket-for-toys-tablet.svg");
+    }
+
+    @media (min-width: @desctop-width) {
+      width: 316px;
+      height: 462px;
+      background-image: url("../img/basket-desctop.svg");
+    }
   }
 
-  @media (min-width: @desctop-width) {
-    width: 316px;
-    height: 462px;
-    background-image: url("../img/basket-desctop.svg");
-  }
-}
+  &__bunny {
+    width: 260px;
+    height: 195px;
+    background-image: url("../img/bunny-toy.svg");
 
-.img-goods .img-goods__bunny {
-  width: 260px;
-  height: 195px;
-  background-image: url("../img/bunny-toy.svg");
+    @media (min-width: @tablet-width) {
+      width: 334px;
+      height: 334px;
+      background-image: url("../img/bunny-toy-tablet.svg");
+    }
 
-  @media (min-width: @tablet-width) {
-    width: 334px;
-    height: 334px;
-    background-image: url("../img/bunny-toy-tablet.svg");
-  }
-
-  @media (min-width: @desctop-width) {
-    width: 316px;
-    height: 462px;
-    background-image: url("../img/bunny-desctop.svg");
-  }
-}
-
-.img-goods .img-goods__big-basket-for-toys {
-  width: 260px;
-  height: 195px;
-  background-image: url("../img/big-basket-for-toys.svg");
-
-  @media (min-width: @tablet-width) {
-    width: 334px;
-    height: 334px;
-    background-image: url("../img/big-basket-for-toys-tablet.svg");
+    @media (min-width: @desctop-width) {
+      width: 316px;
+      height: 462px;
+      background-image: url("../img/bunny-desctop.svg");
+    }
   }
 
-  @media (min-width: @desctop-width) {
-    width: 316px;
-    height: 462px;
-    background-image: url("../img/big-basket-desctop.svg");
+  &__big-basket-for-toys {
+    width: 260px;
+    height: 195px;
+    background-image: url("../img/big-basket-for-toys.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 334px;
+      height: 334px;
+      background-image: url("../img/big-basket-for-toys-tablet.svg");
+    }
+
+    @media (min-width: @desctop-width) {
+      width: 316px;
+      height: 462px;
+      background-image: url("../img/big-basket-desctop.svg");
+    }
   }
 }
 
