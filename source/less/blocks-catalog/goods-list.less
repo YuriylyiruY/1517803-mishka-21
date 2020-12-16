@@ -1,5 +1,12 @@
 .goods-list {
   list-style: none;
+
+  @media (min-width: @desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    //margin:0 50px;
+  }
 }
 
 .goods-item__link {
@@ -34,11 +41,76 @@
   margin-bottom: 30px;
 }
 
+.img-goods {
+  &__basket {
+    width: 260px;
+    height: 195px;
+    background-image: url("../img/baskets-for-toys.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 334px;
+      height: 334px;
+      background-image: url("../img/basket-for-toys-tablet.svg");
+    }
+
+    @media (min-width: @desctop-width) {
+      width: 316px;
+      height: 462px;
+      background-image: url("../img/basket-desctop.svg");
+    }
+  }
+
+  &__bunny {
+    width: 260px;
+    height: 195px;
+    background-image: url("../img/bunny-toy.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 334px;
+      height: 334px;
+      background-image: url("../img/bunny-toy-tablet.svg");
+    }
+
+    @media (min-width: @desctop-width) {
+      width: 316px;
+      height: 462px;
+      background-image: url("../img/bunny-desctop.svg");
+    }
+  }
+
+  &__big-basket-for-toys {
+    width: 260px;
+    height: 195px;
+    background-image: url("../img/big-basket-for-toys.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 334px;
+      height: 334px;
+      background-image: url("../img/big-basket-for-toys-tablet.svg");
+    }
+
+    @media (min-width: @desctop-width) {
+      width: 316px;
+      height: 462px;
+      background-image: url("../img/big-basket-desctop.svg");
+    }
+  }
+}
+
 .goods-item {
   margin-left: 31px;
   display: flex;
   width: 260px;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: @desctop-width) {
+    flex-wrap: wrap;
+    margin: 0;
+  }
 }
 
 .goods-item__video {
@@ -49,12 +121,53 @@
   width: 260px;
 }
 
-.goods-item__discription-video {
+.goods-item-v {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desctop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+.goods-item-v__pic {
+  width: 260px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url("../img/video-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 668px;
+    height: 455px;
+    background-image: url("../img/video-tablet.svg");
+    order: 1;
+  }
+}
+
+.goods-item-v__discription-video {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: @braun-letters-color;
   margin: 30px 0;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    height: 20px;
+    margin: 20px 220px 40px 37px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 200px;
+    position: relative;
+    left: 64%;
+    bottom: 50%;
+  }
 }
 
 .goods-item__button {
@@ -65,9 +178,13 @@
 }
 
 .camera {
-  outline: none;
-  border: none;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 400px;
+    order: 2;
+  }
 }
 
 .camera-pic {
@@ -78,11 +195,31 @@
   background-repeat: no-repeat;
   width: 32px;
   height: 22px;
-  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    top: 22px;
+  }
+
+  @media (min-width: @desctop-width) {
+    top: 50px;
+    left: 20px;
+  }
 }
 
 .camera-text {
-  justify-content: center;
   height: 70px;
   margin-left: 95px;
+  width: 1200px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 20px;
+  }
 }

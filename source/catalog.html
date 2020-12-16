@@ -8,14 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="body">
   <div class="body-wraper">
     <header class="header">
       <nav class="header__nav header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item header-nav-item"><a class="header__link" href="index.html"><img
+        <ul class="header-nav__list-up">
+          <li class="header-nav__item header-nav-item"><a class="header__link-logo" href="index.html"><img
                 src="img/mishka-logo.svg" width="86" height="35" alt="логотип Мишка»"></a>
             <button class="header-nav__nav-toggle visually-hidden" type="button"><span>Закрыть
                 меню</span></button>
@@ -30,51 +31,79 @@
               Вязание на заказ
             </a>
           </li>
-          <li class="header-nav__item search-result"><input class="search-result__enter" type="search" name="search"
-              id="search" value="Поиск по сайту">
+          <li class="header-nav__item header-item-add"><a class="header-item-add__link" href="index.html">
+              Новые поступления
+            </a>
+          </li>
+          <li class="header-nav__item header-item-add"><a class="header-item-add__link" href="index.html">
+              Распродажа
+            </a>
           </li>
         </ul>
-        <div class="header-nav__wrap-basket wrap-basket">
-          <p class="wrap-basket__basket">Корзина:</p>
-          <span class="wrap-basket__result"> пока пуста</span>
-        </div>
+        <ul class="header-nav__list-down">
+          <li class="header-nav__item search-result"><input class="search-result__enter " type="text" name="search"
+              id="search" value="Поиск по сайту">
+          </li>
+          <li class="header-nav__wrap-basket basket">
+            <div class="basket__div wrap-basket">
+              <p class="wrap-basket__basket">Корзина:</p>
+              <span class="wrap-basket__result">пока пуста</span>
+            </div>
+          </li>
+          <li class="header-nav__delivery delivery">
+            <div class="delivery__free">Бесплатная доставка по России</div>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-catalog">
       <h1 class="title-catalog">Каталог товаров</h1>
       <ul class="goods-list">
         <li class="goods-list__goods-item goods-item">
-          <a class="goods-item__image"><img src="img/bunny-toy.svg" alt="Игрушка зайчика"></a>
-          <a class="goods-item__link">Зайчик-попрыгайчик</a>
-          <p class="goods-item__disсription">Рост 30 см, вес 200 г</p>
-          <p class="goods-item__price">1200p.
-            <button class="goods-item__button" type="button"><img src="img/basket-button.svg" alt=""></button></p>
-        </li>
-        <li class="goods-list__goods-item goods-item">
-          <a class="goods-item__image"><img src="img/baskets-for-toys.svg" alt=""></a>
-          <a class="goods-item__link">Корзинка для белья</a>
-          <p class="goods-item__disсription">Диаметр 15 см, высота 10 см</p>
-          <p class="goods-item__price">690p.
-            <button class="goods-item__button" type="button"><img src="img/basket-button.svg" alt=""></button></p>
-        </li>
-        <li class="goods-list__goods-item goods-item">
-          <a class="goods-item__image"><img src="img/big-basket-for-toys.svg" alt=""></a>
-          <a class="goods-item__link">Большая корзинка для игрушек</a>
-          <p class="goods-item__disсription">Диаметр 30 см, высота 30 см</p>
-          <p class="goods-item__price">1500p.
-            <button class="goods-item__button" type="button"><img src="img/basket-button.svg" alt=""></button></p>
-        </li>
-        <li class="goods-list__goods-item goods-item">
-          <div class="goods-item__video camera">
-            <p class="camera-pic"></p>
-            <p class="camera-text">Процесс <br>производства</p>
+          <a class="goods-item__image img-goods">
+            <p class="img-goods__bunny"></p>
+          </a>
+          <div class="wrap">
+            <a class="goods-item__link">Зайчик-попрыгайчик</a>
+            <p class="goods-item__disсription">Рост 30 см, вес 200 г</p>
+            <p class="goods-item__price">1200p.
+              <button class="goods-item__button" type="button"><img src="img/basket-button.svg" alt=""></button></p>
           </div>
-          <img src="img/video-mobile.svg" alt="">
-          <p class="goods-item__discription-video">По просьбам наших любимых фолловеров мы сняли для
+        </li>
+        <li class="goods-list__goods-item goods-item">
+          <a class="goods-item__image img-goods">
+            <p class="img-goods__basket"></p>
+          </a>
+          <div class="wrap">
+            <a class="goods-item__link">Корзинка для белья</a>
+            <p class="goods-item__disсription">Диаметр 15 см, высота 10 см</p>
+            <p class="goods-item__price">690p.
+              <button class="goods-item__button" type="button"><img src="img/basket-button.svg" alt=""></button></p>
+          </div>
+        </li>
+        <li class="goods-list__goods-item goods-item">
+          <a class="goods-item__image img-goods">
+            <p class="img-goods__big-basket-for-toys"></p>
+          </a>
+          <div class="wrap">
+            <a class="goods-item__link">Большая корзинка для игрушек</a>
+            <p class="goods-item__disсription">Диаметр 30 см, высота 30 см</p>
+            <p class="goods-item__price">1500p.
+              <button class="goods-item__button" type="button"><img src="img/basket-button.svg" alt=""></button></p>
+          </div>
+        </li>
+        <li class="goods-list__goods-item goods-item-v">
+          <div class="goods-item-v__video camera">
+            <p class="camera-pic"></p>
+            <p class="camera-text">Процесс производства</p>
+          </div>
+          <div class="goods-item-v__pic">
+          </div>
+          <p class="goods-item-v__discription-video">По просьбам наших любимых фолловеров мы сняли для
             вас подробное видео о том, как появляются наши товары.</p>
         </li>
       </ul>
-      <form class="how-week-goods">
+      <form class="how-week-goods week-goods">
         <p class="week-goods__order-title">Добавить в корзину</p>
         <fieldset class="week-goods__choose"> Выберите размер
           <label><input type="checkbox" checked>S</label>
@@ -83,22 +112,14 @@
         </fieldset>
         <input type="submit" value="Добавить">
       </form>
-      <input class="make-order" type="submit" value="Сделать заказ">
+      <div class="make-order"><input class="make-order__btn" type="submit" value="Сделать заказ"></div>
     </main>
-    <footer class="footer">
-      <section class="comunication">
-        <div class="comunication__wraper comunication-wraper">
-          <h2 class="comunication-wraper__title">Контакты</h2>
-          <p class="comunication-wraper__email">e-mail:</p>
-          <p class="comunication-wraper__name-email">info@mimimishkashop.ru</p>
-          <p class="comunication-wraper__address">адрес:</p>
-          <p class="comunication-wraper__show-address-shop">г. Санкт-Петербург ул. Большая Конюшенная д.
-            19/8 офис 101</p>
-          <div class="comunication-wraper__map"></div>
-          <input type="submit" value="Напишите нам">
-        </div>
+    <footer class="footer-catalog">
+      <section class="footer-mishka">
+        <a class="footer-mishka__link-logo" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
+            alt="логотип Мишка»"></a>
       </section>
-      <section class="footer__socials-icon socials-icon">
+      <section class="footer-catalog__socials-icon socials-icon">
         <h2 class="visually-hidden">Контакты в социальных сетях</h2>
         <ul class="socials-icon__list icon-list">
           <li class="icon-list__item icon-item">

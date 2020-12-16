@@ -16,7 +16,7 @@
   background-color: @background-page-color;
 }
 
-// это оставлю,упрощает разметку
+// Это оставлю,упрощает разметку
 ul,
 ol,
 p,
@@ -35,16 +35,17 @@ h6 {
   color: @braun-letters-color;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
-  width: 320px;
-  margin: 0 30px;
+  width: auto;
+  padding: 0 30px;
 
   @media (min-width: @tablet-width) {
-    width: 765px;
-    margin: 0 50px;
+    //width: 768px;
+    width: auto;
+    padding: 0 50px;
   }
 
   @media (min-width: @desctop-width) {
     width: 1150px;
-    margin: 0 50px;
+    padding: 0 50px;
   }
 }
