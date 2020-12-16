@@ -46,19 +46,32 @@
 }
 
 .header__link-logo {
+  position: static;
+  background-position: 50% 50%;
   display: flex;
   width: 200px;
   margin: 0 auto;
   justify-content: center;
+  background-image: url("../img/mishka-logo.svg");
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
+    position: static;
     width: 400px;
-    justify-content: flex-start;
+    height: 90px;
+    padding: 0;
+    background-position: 0 50%;
+    background-image: url("../img/mishka-logo-tablet.svg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: @desctop-width) {
     width: 200px;
-    justify-content: flex-end;
+    position: absolute;
+    left: 45px;
+    background-image: url("../img/mishka-logo-desktop.svg");
+    background-repeat: no-repeat;
+    z-index: 3;
   }
 }
 
@@ -78,7 +91,7 @@
 
   @media (min-width: @desctop-width) {
     order: 1;
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -87,25 +100,30 @@
   margin: 0 auto 0 0;
   width: 260px;
 
-
   @media (min-width: @tablet-width) {
     width: 85px;
     margin-right: 0;
     padding: 0;
     height: 90px;
+    position: absolute;
+    left: 87px;
+  }
+
+  @media (min-width: @desctop-width) {
+    left: 127px;
   }
 }
 
 .search-result {
+  display: flex;
   background: gold;
   width: 260px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     height: 90px;
     width: 85px;
-    padding: 0;
-    margin-right: 0;
   }
 }
 
@@ -123,7 +141,7 @@
 .wrap-basket {
   display: flex;
   background: blue;
-
+  position: relative;
   width: 260px;
   margin: 0 auto;
 
@@ -134,17 +152,29 @@
 }
 
 .wrap-basket__basket {
-
+  display: flex;
   background: red;
-  width: 40%;
+  width: 33%;
   margin: 0;
   box-sizing: border-box;
+  z-index: 3;
+  justify-content: flex-start;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    width: 36px;
+    height: 39px;
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
-    width: 132px;
+    width: 164px;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
 }
@@ -153,7 +183,7 @@
   background: green;
   margin: 0 auto;
   margin-left: 0;
-  width: 60%;
+  width: 67%;
 
   @media (min-width: @tablet-width) {
     height: 90px;
@@ -161,7 +191,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 132px;
+    width: 100px;
   }
 }
 
@@ -233,6 +263,16 @@
 }
 
 .header-nav {
+  @media (max-width: @mobile-width-only) {
+    & .header-nav__list-down {
+      display: none;
+    }
+
+    & .header-item {
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     width: auto;
@@ -241,8 +281,8 @@
   }
 
   @media (min-width: @desctop-width) {
-    width: 1150px;
-    height: 200px;
+    // width: 1150px;
+    // height: 200px;
   }
 }
 
@@ -269,9 +309,13 @@
   &:active {
     background-color: #624530;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
-.header-nav .header-nav__nav-toggle::before {
+.header-nav__nav-toggle::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -282,7 +326,7 @@
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
-.header-nav .header-nav__nav-toggle:active::before {
+.header-nav__nav-toggle:active::before {
   background-color: fade(#ffffff, 30%);
   box-shadow:
     0 8px 0 0 fade(#ffffff, 30%),
@@ -320,26 +364,24 @@
   }
 }
 
-@media (max-width: @mobile-width-only) {
-  .main-nav--opened .header-item {
-    display: block;
-  }
-}
+.main-nav--opened {
+  @media (max-width: @mobile-width-only) {
+    & .header-nav__list-down {
+      display: block;
+    }
 
-@media (max-width: @mobile-width-only) {
-  .main-nav--opened .header-nav__list-down {
-    display: block;
+    & .header-item {
+      display: block;
+    }
   }
-}
 
-@media (max-width: @mobile-width-only) {
-  .header-nav .header-item {
-    display: none;
-  }
-}
+  @media (min-width: @tablet-width) {
+    .header-nav.header-nav__list-down {
+      width: auto;
+    }
 
-@media (max-width: @mobile-width-only) {
-  .header-nav .header-nav__list-down {
-    display: none;
+    .header-nav.header-item {
+      width: auto;
+    }
   }
 }
