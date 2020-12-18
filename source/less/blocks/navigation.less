@@ -30,7 +30,7 @@
     order: 3;
     background: pink;
     width: 40%;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     margin: 0;
     height: 90px;
@@ -40,8 +40,18 @@
 .header-nav-item {
   position: relative;
 
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    background: red;
+  }
+
   @media (min-width: @desctop-width) {
     order: 2;
+    justify-content: center;
   }
 }
 
@@ -57,9 +67,11 @@
 
   @media (min-width: @tablet-width) {
     position: static;
+
     width: 400px;
     height: 90px;
     padding: 0;
+
     background-position: 0 50%;
     background-image: url("../img/mishka-logo-tablet.svg");
     background-repeat: no-repeat;
@@ -68,10 +80,11 @@
   @media (min-width: @desctop-width) {
     width: 200px;
     position: absolute;
-    left: 45px;
+    left: -60px;
     background-image: url("../img/mishka-logo-desktop.svg");
     background-repeat: no-repeat;
     z-index: 3;
+    margin-left: 50px;
   }
 }
 
@@ -82,7 +95,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     width: 50%;
     height: 90px;
@@ -95,22 +108,37 @@
   }
 }
 
+.search-result__pic {
+  @media (min-width: @tablet-width) {
+    background: rgb(38, 0, 128);
+    width: 85px;
+    height: 90px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -68px;
+      top: 30px;
+      width: 36px;
+      height: 39px;
+      background-image: url("../img/search.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet-width) {
+        left: 35px;
+        top: 35px;
+      }
+    }
+  }
+}
+
 .search-result__enter {
   background: rosybrown;
   margin: 0 auto 0 0;
   width: 260px;
 
   @media (min-width: @tablet-width) {
-    width: 85px;
-    margin-right: 0;
-    padding: 0;
-    height: 90px;
-    position: absolute;
-    left: 87px;
-  }
-
-  @media (min-width: @desctop-width) {
-    left: 127px;
+    display: none;
   }
 }
 
@@ -123,7 +151,14 @@
 
   @media (min-width: @tablet-width) {
     height: 90px;
-    width: 85px;
+    justify-content: space-between;
+    width: 87px;
+  }
+
+  @media (min-width: @desctop-width) {
+    height: 90px;
+    width: 87px;
+    margin-right: 0;
   }
 }
 
@@ -133,7 +168,9 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin-right: 0;
+    // display:flex;
+    // justify-content: flex-start;
+    margin-left: 0;
     width: 264px;
   }
 }
@@ -168,6 +205,11 @@
     height: 39px;
     background-image: url("../img/cart.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      left: 20px;
+      top: 35px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -182,7 +224,6 @@
 .wrap-basket__result {
   background: green;
   margin: 0 auto;
-  margin-left: 0;
   width: 67%;
 
   @media (min-width: @tablet-width) {
@@ -203,6 +244,7 @@
   @media (min-width: @tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
+
     width: 54%;
     height: 90px;
     margin: 0;
@@ -217,10 +259,9 @@
 
   @media (min-width: @tablet-width) {
 
-    width: 46%;
     height: 90px;
     margin: 0;
-    justify-content: flex-end;
+    width: 50%;
     flex-wrap: wrap;
     flex-direction: row;
     background: tomato;
@@ -229,7 +270,6 @@
   @media (min-width: @desctop-width) {
     margin: 0;
     width: 50%;
-    justify-content: flex-end;
   }
 }
 
@@ -288,8 +328,9 @@
 
 .header-item__link {
   @media (min-width: @tablet-width) {
-    width: 180px;
+    width: 200px;
     font-size: 15px;
+    background: red;
   }
 }
 
