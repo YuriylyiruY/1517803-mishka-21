@@ -12,6 +12,7 @@
 .shop-goods {
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-top: -120px;
   }
 }
 
@@ -33,31 +34,7 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
-    height: 131px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/zigzag-tablet.svg");
-      min-width: 1100px;
-      min-height: 24px;
-      left: 0;
-      bottom: -1px;
-      z-index: 5;
-    }
-  }
-
-  @media (min-width: @desctop-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/zigzag-desktop.svg");
-      min-width: 1100px;
-      min-height: 34px;
-      left: 0;
-      bottom: 0;
-      z-index: 5;
-    }
+    height: 107px;
   }
 }
 
@@ -78,7 +55,7 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
-    height: 131px;
+    height: 107px;
   }
 }
 

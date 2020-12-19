@@ -6,7 +6,7 @@
   background-position: 50% 50%;
   background-color: #f9f9f9;
   margin: 0 -50px;
-
+  position: relative;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/hero-tablet.svg");
@@ -14,6 +14,18 @@
     min-height: 746px;
     min-width: 758px;
     margin-top: -110px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-tablet.svg");
+      min-width: 100%;
+      min-height: 24px;
+      left: 0;
+      bottom: -1px;
+      z-index: 5;
+      //background-size: cover;
+    }
   }
 
   @media (min-width: @desctop-width) {
@@ -21,8 +33,21 @@
     background-repeat: no-repeat;
     min-height: 746px;
     min-width: 1050px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-desktop.svg");
+      min-width: 100%;
+      min-height: 34px;
+      left: 0;
+      bottom: -1px;
+      z-index: 5;
+    }
   }
 }
+
 
 .promo-pic__text {
   background-image: url("../img/text.svg");
