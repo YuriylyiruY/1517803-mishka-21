@@ -1,49 +1,47 @@
 .promo-pic {
-  display: flex;
   background-image: url("../img/mishka-fon.svg");
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 373px;
   min-width: 320px;
-  justify-content: center;
-  align-items: center;
+  background-position: 50% 50%;
+  background-color: #f9f9f9;
+  margin: 0 -50px;
+
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.promo-pic-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
     background-image: url("../img/hero-tablet.svg");
     background-repeat: no-repeat;
     min-height: 746px;
-    min-width: 765px;
-    justify-content: center;
-    align-items: center;
+    min-width: 758px;
+    margin-top: -110px;
   }
 
   @media (min-width: @desctop-width) {
-    display: none;
+    background-image: url("../img/hero-desktop.svg");
+    background-repeat: no-repeat;
+    min-height: 746px;
+    min-width: 1050px;
   }
 }
 
-.promo-pic-desctop {
-  display: none;
+.promo-pic__text {
+  background-image: url("../img/text.svg");
+  background-repeat: no-repeat;
+  min-height: 300px;
+  min-width: 320px;
+  background-position: 50% 50%;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    background-image: url("../img/text-tablet.svg");
+    background-repeat: no-repeat;
+    min-height: 746px;
+    min-width: 765px;
   }
 
   @media (min-width: @desctop-width) {
-    display: flex;
-    background-image: url("../img/hero1.svg");
+    background-image: url("../img/text-desktop.svg");
     background-repeat: no-repeat;
     min-height: 746px;
     min-width: 1150px;
-    justify-content: center;
-    align-items: center;
   }
 }
