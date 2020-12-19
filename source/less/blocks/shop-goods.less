@@ -13,21 +13,85 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+}
 
-  &-interior {
-    background-color: @light-green;
-    width: 100%;
+.shop-goods-interior {
+  background-color: @light-green;
+  width: 100%;
+  position: relative;
 
-    @media (min-width: @tablet-width) {
-      width: 50%;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/interior.svg");
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 62px;
+    right: 45px;
+    top: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    height: 131px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-tablet.svg");
+      min-width: 1100px;
+      min-height: 24px;
+      left: 0;
+      bottom: -1px;
+      z-index: 5;
     }
   }
 
-  &-toys {
-    background-color: @dark-green;
-
-    @media (min-width: @tablet-width) {
-      width: 50%;
+  @media (min-width: @desctop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-desktop.svg");
+      min-width: 1100px;
+      min-height: 34px;
+      left: 0;
+      bottom: 0;
+      z-index: 5;
     }
+  }
+}
+
+.shop-goods-toys {
+  background-color: @dark-green;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/toy.svg");
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 61px;
+    right: 30px;
+    top: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    height: 131px;
+  }
+}
+
+.shop-goods-interior__link {
+  @media (min-width: @tablet-width) {
+    background: red;
+    width: 100px;
+  }
+}
+
+.shop-goods-toys__link {
+  @media (min-width: @tablet-width) {
+    background: blue;
+    width: 100px;
   }
 }
