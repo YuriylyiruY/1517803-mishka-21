@@ -11,11 +11,14 @@
 }
 
 .week-goods-wraper {
-  display: flex;
-  flex-wrap: wrap;
+
+
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  //flex-direction: column;
+  // margin:0 30px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 50%;
@@ -31,7 +34,9 @@
 }
 
 .week-goods-wraper__descraiption {
-  padding-left: 31px;
+  width: 100%;
+  margin-top: 20px;
+  background: green;
 
   @media (min-width: @desctop-width) {
     padding-left: 50px;
@@ -40,12 +45,21 @@
 }
 
 .week-goods-wraper__property {
-  width: 30%;
-  padding-left: 31px;
+  width: 100%;
+  margin: 10px 0;
+  background: red;
 }
 
-.week-goods-wraper__description-property {
-  width: 50%;
+.week-goods-wraper__description-color {
+  margin-left: 60px;
+}
+
+.week-goods-wraper__description-diametr {
+  margin-left: 31px;
+}
+
+.week-goods-wraper__description-height {
+  margin-left: 42px;
 }
 
 .week-goods-wraper__price {
@@ -57,18 +71,26 @@
   width: 100%;
 }
 
+.button-week {
+  width: 100%;
+  text-align: center;
+}
+
 .week-goods-wraper__submit {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #444444;
+  color: @braun-letters-color;
   background-color: transparent;
   text-transform: uppercase;
   border-style: none;
-  width: 260px;
+  //width: 260px;
   height: 52px;
-  margin-left: 31px;
-  border: 2px solid #444444;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border: 2px solid @braun-letters-color;
+  width: 100%;
 }
 
 
@@ -76,8 +98,10 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
-  padding: 31px 31px 0 31px;
+  color: @black;
+  background-color: green;
+  margin-top: -20px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -101,8 +125,11 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #63d1bb;
-  padding: 0 31px 31px 31px;
+  color: @light-green;
+  background-color: red;
+  width: 100%;
+  margin-top: 10px;
+  align-items: flex-start;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -122,13 +149,16 @@
 }
 
 .week-goods__pic {
-  background-image: url("../img/triple-set.svg");
+  background-image: url("../img/set-mobile.svg");
   background-repeat: no-repeat;
-  min-height: 300px;
-  width: 320px;
-  margin-left: 20px;
+  height: 0;
+  padding-bottom: 120.25%;
+  width: 100%;
+  background-size: contain;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 0;
     background-image: url("../img/triple-tablet.svg");
     background-repeat: no-repeat;
     min-height: 403px;
@@ -144,7 +174,6 @@
     order: 3;
   }
 }
-
 
 .order-form {
   display: none;
