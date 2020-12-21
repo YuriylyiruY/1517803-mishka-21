@@ -10,90 +10,7 @@
   }
 }
 
-.week-goods-wraper {
-
-
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  //flex-direction: column;
-  // margin:0 30px;
-  width: 100%;
-
-  @media (min-width: @tablet-width) {
-    width: 50%;
-  }
-
-  @media (min-width: @desctop-width) {
-    min-width: 80px;
-    margin: 20px;
-    margin-top: 130px;
-    padding-left: 180px;
-    order: 2;
-  }
-}
-
-.week-goods-wraper__descraiption {
-  width: 100%;
-  margin-top: 20px;
-  background: green;
-
-  @media (min-width: @desctop-width) {
-    padding-left: 50px;
-    margin-bottom: 100px;
-  }
-}
-
-.week-goods-wraper__property {
-  width: 100%;
-  margin: 10px 0;
-  background: red;
-}
-
-.week-goods-wraper__description-color {
-  margin-left: 60px;
-}
-
-.week-goods-wraper__description-diametr {
-  margin-left: 31px;
-}
-
-.week-goods-wraper__description-height {
-  margin-left: 42px;
-}
-
-.week-goods-wraper__price {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  padding-top: 26px;
-  width: 100%;
-}
-
-.button-week {
-  width: 100%;
-  text-align: center;
-}
-
-.week-goods-wraper__submit {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: @braun-letters-color;
-  background-color: transparent;
-  text-transform: uppercase;
-  border-style: none;
-  //width: 260px;
-  height: 52px;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  border: 2px solid @braun-letters-color;
-  width: 100%;
-}
-
-
+//заглавие
 .week-goods__name {
   font-weight: 700;
   font-size: 25px;
@@ -108,9 +25,10 @@
     height: 100px;
     font-size: 43px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
+    width: 60%;
   }
 
   @media (min-width: @desctop-width) {
@@ -133,18 +51,115 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    margin-left: 20px;
+    width: 100px;
+    margin-right: 130px;
+    text-align: center;
   }
 
   @media (min-width: @desctop-width) {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     order: 0;
+  }
+}
+
+// див обёртка
+.week-goods-wraper {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: @desctop-width) {
+    min-width: 80px;
+    margin: 20px;
+    margin-top: 130px;
+    padding-left: 180px;
+    order: 2;
+  }
+}
+
+.week-goods-wraper__descraiption {
+  width: 100%;
+  margin-top: 20px;
+  background: green;
+
+  @media (min-width: @tablet-width) {
+    width: 34%;
+    margin-bottom: 50px;
+    height: 70px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding-left: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+.week-goods-wraper__property {
+  width: 100%;
+  margin: 10px 0;
+  background: red;
+
+  @media (min-width: @tablet-width) {
+    width: 34%;
+  }
+}
+
+.week-goods-wraper__description-color {
+  margin-left: 60px;
+}
+
+.week-goods-wraper__description-diametr {
+  margin-left: 31px;
+}
+
+.week-goods-wraper__description-height {
+  margin-left: 42px;
+}
+
+.week-goods-wraper__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 26px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 34%;
+    margin-top: 70px;
+  }
+}
+
+.week-goods-wraper__submit {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: @braun-letters-color;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-style: none;
+  height: 52px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border: 2px solid @braun-letters-color;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 34%;
   }
 }
 
@@ -157,15 +172,23 @@
   background-size: contain;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    position: relative;
+    bottom: 24%;
+    //left:80px;
+    float: right;
     padding: 0;
     background-image: url("../img/triple-tablet.svg");
     background-repeat: no-repeat;
     min-height: 403px;
-    min-width: 40%;
+    width: 400px;
+
+    margin-bottom: 280px;
   }
 
   @media (min-width: @desctop-width) {
+    position: absolute;
+    top: -30%;
+    margin-left: 40%;
     background-image: url("../img/triple-desktop.svg");
     background-repeat: no-repeat;
     min-height: 636px;
