@@ -11,9 +11,8 @@
   }
 
   @media (min-width: @desctop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    margin-top: 105px;
+    min-width: 1050px;
   }
 }
 
@@ -28,24 +27,28 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    //display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     height: 100px;
     font-size: 43px;
-    // align-items: center;
-    // justify-content: flex-start;
     margin: 0;
     padding: 0;
     width: 450px;
   }
 
   @media (min-width: @desctop-width) {
-    order: 1;
-    position: absolute;
-    z-index: 3;
+    font-size: 53px;
+    line-height: 57px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 0;
+    width: 874px;
+    z-index: 7;
+    text-align: left;
   }
 }
 
@@ -60,11 +63,15 @@
   margin-top: 10px;
   align-items: flex-start;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
-    // display: flex;
-    // flex-direction: row;
-    //align-items: center;
-    //justify-content: center;
+    br {
+      display: inline;
+    }
+
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -73,15 +80,17 @@
     margin: 0 auto;
     padding: 0;
     width: 100px;
-    margin-right: 69px;
+    margin-right: 0;
     text-align: center;
   }
 
   @media (min-width: @desctop-width) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    order: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-width: 176px;
+    margin-left: 0;
   }
 }
 
@@ -101,11 +110,10 @@
   }
 
   @media (min-width: @desctop-width) {
-    min-width: 80px;
-    margin: 20px;
-    margin-top: 130px;
-    padding-left: 180px;
-    order: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
 
@@ -115,14 +123,14 @@
   background: green;
 
   @media (min-width: @tablet-width) {
-    width: 35%;
+    width: 39%;
     margin-bottom: 50px;
     height: 70px;
   }
 
   @media (min-width: @desctop-width) {
-    padding-left: 50px;
     margin-bottom: 100px;
+    width: 30%;
   }
 }
 
@@ -157,7 +165,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 34%;
+    width: 39%;
     margin-top: 70px;
   }
 }
@@ -178,7 +186,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 34%;
+    width: 39%;
   }
 }
 
@@ -192,7 +200,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    bottom: 24%;
+    bottom: 35%;
     left: 67px;
     float: right;
     padding: 0;
@@ -204,13 +212,12 @@
 
   @media (min-width: @desctop-width) {
     position: absolute;
-    top: -30%;
-    margin-left: 40%;
+    bottom: 78px;
+    left: 350px;
     background-image: url("../img/triple-desktop.svg");
     background-repeat: no-repeat;
     min-height: 636px;
     width: 525px;
-    margin-right: 50px;
     order: 3;
   }
 }
