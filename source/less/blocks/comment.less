@@ -1,14 +1,16 @@
-.comment {
-  margin-top: 50px;
-  margin-left: 31px;
-  margin-right: 35px;
-}
-
 .comment-wraper__opinion {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 250px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .comment-wraper__write-opinion {
@@ -16,6 +18,13 @@
   font-size: 15px;
   line-height: 30px;
   margin-top: 26px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin-left: 50px;
+    width: 150%;
+    bottom: 170px;
+  }
 }
 
 .comment-wraper__autor {
@@ -25,15 +34,19 @@
   font-size: 17px;
   line-height: 24px;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
 }
 
 .comment-wraper__autor-address {
   margin-bottom: 25px;
-}
 
-.button-direction {
-  display: flex;
-  margin-bottom: 20px;
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+  }
 }
 
 .button-direction__left,
@@ -41,13 +54,34 @@
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  width: 160px;
+  width: 49%;
   border: 1px solid @ec-color;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    height: 30px;
+    width: 82px;
+  }
 }
 
 .btn__style {
   background-color: transparent;
   border-style: none;
+}
+
+.write-comment {
+  width: 100%;
+  margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 50px;
+    margin-top: 55px;
+    margin-bottom: 245px;
+    order: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .write-comment__btn {
@@ -58,25 +92,41 @@
   color: @braun-letters-color;
   background-color: transparent;
   padding: 10px 0;
-  width: 260px;
+  width: 100%;
   border: 2px solid @braun-letters-color;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .button-direction {
-    position: relative;
-    left: 370px;
-    bottom: 70px;
-  }
+// дивы и заглавие
+.comment {
+  margin-top: 50px;
 
-  .write-comment__btn {
-    position: relative;
-    left: 435px;
-    bottom: 340px;
-  }
-
-  .comment {
+  @media (min-width: @tablet-width) {
     background-image: url("../img/yarn.png");
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.comment-wraper {
+  @media (min-width: @tablet-width) {
+    width: 60%;
+    position: relative;
+  }
+}
+
+.button-direction {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
