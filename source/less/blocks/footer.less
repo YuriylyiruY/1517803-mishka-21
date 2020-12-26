@@ -1,6 +1,14 @@
 .footer {
+  margin-top: 50px;
+  height: 159px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: tomato;
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
