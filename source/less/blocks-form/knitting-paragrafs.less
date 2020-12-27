@@ -2,29 +2,81 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  color: #000000;
-  background: #f1f1f1;
+  color: @black;
+  background: @white-color;
   text-align: center;
   padding: 72px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+    padding: 87px 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../img/zigzag-tablet.svg");
+      background-repeat: repeat;
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+    }
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 99px 0;
+
+    &::after {
+      content: "";
+      background-image: url("../img/zigzag-desktop1.svg");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+    }
+  }
 }
 
 .inventation-text {
-  margin: 0 31px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: @braun-letters-color;
   padding: 17px 0 17px 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 69px;
+    padding: 0;
+  }
+
+  @media (min-width: @desctop-width) {
+    background: red;
+    width: 550px;
+    min-height: 60px;
+    padding: 0;
+    margin: 94px auto 0 auto;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .order-knitting__submit {
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
-  color: #444444;
+  color: @braun-letters-color;
   text-transform: uppercase;
   padding: 15px;
-  border: 2px solid #444444;
+  border: 2px solid @braun-letters-color;
   background-color: transparent;
   width: 260px;
 }

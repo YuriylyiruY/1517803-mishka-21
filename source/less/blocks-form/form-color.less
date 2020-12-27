@@ -1,14 +1,28 @@
 .form-color {
   border: none;
-  border-top: 1px solid #63d1bb;
+  border-top: 1px solid @light-green;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-around;
     border: none;
-    width: 668px;
+    min-width: 568px;
+    margin-left: 174px;
+    margin-bottom: 100px;
+
+    &::before {
+      content: "";
+      background-color: @white-color;
+      position: absolute;
+      height: 304px;
+      padding: 0 150px;
+      left: -250px;
+      top: 0;
+      width: 100%;
+    }
   }
 
   @media (min-width: @desctop-width) {
@@ -39,7 +53,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: flex-start;
-    width: 180px;
+    width: 210px;
   }
 }
 

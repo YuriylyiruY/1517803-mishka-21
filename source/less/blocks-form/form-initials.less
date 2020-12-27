@@ -1,6 +1,9 @@
 .form-initials {
   border: none;
-  border-top: 1px solid #63d1bb;
+  border-top: 1px solid @light-green;
+  width: 100%;
+  padding: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -8,16 +11,17 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    width: 668px;
+    min-width: 668px;
   }
 }
 
-.form-initials__content {
+.form-initials__legend {
   position: absolute;
-  left: -15px;
-  bottom: -7px;
+  left: 13px;
+  bottom: 187px;
   background: @background-main-color;
-  width: 70px;
+  //width: 70px;
+  //margin-left: 13px;
 }
 
 .form-initials__wrap {
@@ -30,7 +34,7 @@
 
 .wrap-initials__content {
   margin: 10px;
-  margin-left: -13px;
+  //margin-left: -13px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -45,12 +49,47 @@
   line-height: 18px;
   color: @black;
   opacity: 0.3;
-  margin: 0 10px;
-  margin-left: -13px;
 
+  //margin: 0 10px;
+  // margin-left: -13px;
   @media (min-width: @tablet-width) {
     display: block;
     width: 56%;
     height: 30px;
   }
+}
+
+.wrap-initials {
+  width: 100%;
+  margin-left: -13px;
+  margin-top: 10px;
+}
+
+.wrap-initials__first-name {
+  width: 100%;
+  margin-bottom: 10px;
+  //margin-top: 10px;
+  margin-left: 10px;
+  border: none;
+  border-bottom: 2px solid @black;
+  opacity: 1;
+}
+
+.wrap-initials__second-name {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid @black;
+  opacity: 1;
+}
+
+.wrap-initials__father-name {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 100%;
+  border: none;
+  border-style: none;
+  border-bottom: 2px solid @black;
+  opacity: 1;
 }

@@ -16,10 +16,99 @@
   bottom: -7px;
   background: @background-main-color;
   width: 70px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 25px;
     margin: 0;
+  }
+}
+
+.legend-name__wrap-color {
+  position: absolute;
+  left: -15px;
+  bottom: -7px;
+  background: @background-main-color;
+  width: 70px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 45px;
+    margin: 0;
+    left: -185px;
+  }
+}
+
+.order-knitting {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+  }
+}
+
+.form-type {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.form-color {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.form-initials {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.tel-form {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.email-form {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+
+.comment-textarea {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+}
+
+.note-form {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
   }
 }
