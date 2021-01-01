@@ -11,6 +11,7 @@
 
 .shop-goods {
   margin-top: -72px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -20,7 +21,6 @@
 
 .shop-goods-interior {
   background-color: @light-green;
-  margin: 0 -30px;
   position: relative;
 
   &::before {
@@ -44,7 +44,8 @@
 .shop-goods-toys {
   background-color: @dark-green;
   position: relative;
-  margin: 0 -30px;
+  //min-width: 320px;
+  //margin: 0 -30px;
 
   &::before {
     content: "";

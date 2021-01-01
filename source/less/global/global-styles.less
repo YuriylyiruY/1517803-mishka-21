@@ -12,9 +12,6 @@
 }
 
 .page {
-  height: 100%;
-  background-color: @background-page-color;
-
   @media (min-width: @desctop-width) {
     background-color: @background-main-color;
   }
@@ -35,17 +32,15 @@ h6 {
 }
 
 .body-wraper {
-  background-color: @background-main-color;
+  // background-color: @background-main-color;
   color: @braun-letters-color;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
-  //padding: 0 30px;
-  min-width: 260px;
-  min-height: 455px;
-  margin: auto;
+  min-width: 320px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
+  background-color: red;
 
   @media (min-width: @tablet-width) {
     min-width: 668px;
