@@ -2,7 +2,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 668px;
+    width: 100%;
   }
 
   @media (min-width: @desctop-width) {
@@ -16,6 +16,11 @@
   flex-wrap: wrap;
   min-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 668px;
+    padding: 0 50px;
+  }
 
   @media (min-width: @desctop-width) {
     flex-direction: column;
@@ -169,7 +174,9 @@
   border: 2px solid @braun-letters-color;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto 0 auto;
+    width: 230px;
+    height: 52px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desctop-width) {
