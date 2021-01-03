@@ -2,7 +2,9 @@
 .email-form,
 .comment-textarea {
   border: none;
-  border-top: 1px solid #63d1bb;
+  border-top: 1px solid @light-green;
+  padding: 30px 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -14,11 +16,24 @@
   }
 }
 
+.placeholder-content-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  border-color: fade(@black, 10%);
+  position: relative;
+  //margin-top: 5px;
+  padding: 15px 0 15px 15px;
+  //margin-bottom: 5px;
+  width: 92%;
+  border: 2px solid @black;
+}
+
 .note-form__order-knitting {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: @braun-letters-color;
   margin: 20px 0;
 }
 
