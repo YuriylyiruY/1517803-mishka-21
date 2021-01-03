@@ -6,6 +6,8 @@
   background: @white-color;
   text-align: center;
   padding: 72px 0;
+  min-width: 260px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     margin-top: -110px;
@@ -45,8 +47,9 @@
   font-size: 13px;
   line-height: 24px;
   color: @braun-letters-color;
-  padding: 17px 0 17px 0;
-  width: 260px;
+  padding: 17px 30px 17px 30px;
+  min-width: 260px;
+  //margin: 0 30px;
 
   br {
     display: none;
@@ -70,20 +73,34 @@
   }
 }
 
+.note-form {
+  text-align: center;
+}
+
+.note-form__order-knitting {
+  text-align: left;
+}
+
 .order-knitting__submit {
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: @braun-letters-color;
   text-transform: uppercase;
-  padding: 15px;
+  //padding: 15px;
   border: 2px solid @braun-letters-color;
   background-color: transparent;
-  width: 260px;
+  min-width: 260px;
+  padding: 15px 0;
+  margin: 0 auto;
 }
 
 .order-knitting {
+  // margin:0;
+  // padding:0;
   //padding:0;
-  width: 260px;
+  // min-width: 260px;
   //background:blue;
+  width: 100%;
+  margin: 0 auto;
 }
