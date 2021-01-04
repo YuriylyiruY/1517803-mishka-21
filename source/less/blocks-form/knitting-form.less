@@ -1,11 +1,11 @@
 .tel-form,
-.email-form,
-.comment-textarea {
+.email-form {
   border: none;
   border-top: 1px solid @light-green;
   padding: 30px 30px;
   // margin: 0 30px;
   min-width: 260px;
+  background: @white-color;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -13,21 +13,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 668px;
+    min-width: 668px;
+    height: 115px;
+    padding: 0 50px;
+    margin: 0;
   }
 }
 
-.placeholder-content-text {
+.placeholder-content-tel,
+.placeholder-content-email {
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  border-color: fade(@black, 10%);
+  border-color: fade(red, 30%);
   position: relative;
-  //margin-top: 5px;
-  padding: 15px 0 15px 15px;
-  //margin-bottom: 5px;
-  width: 94%;
-  border: 2px solid @black;
+  margin-top: 5px;
+  padding: 15px 0;
+  margin-bottom: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid @black;
+
+
+  @media (min-width: @tablet-width) {
+    //display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    background: @white-color;
+  }
 }
 
 .email-inside-block {
@@ -44,6 +61,19 @@
     left: 215px;
     bottom: 22px;
     z-index: 3;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: red;
+    width: 80%;
+    margin-left: 130px;
+    margin-bottom: 55px;
+
+    &::before {
+      content: "";
+      left: 488px;
+      bottom: 15px;
+    }
   }
 }
 
@@ -62,35 +92,17 @@
     bottom: 22px;
     z-index: 3;
   }
-}
-
-.note-form__order-knitting {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: @braun-letters-color;
-  margin: 20px 0;
-}
-
-.note-form {
-  min-width: 260px;
-  padding: 0 30px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    width: 668px;
-    margin: 0 auto;
-  }
-}
+    background: red;
+    width: 80%;
+    margin-left: 130px;
+    margin-top: 55px;
 
-.order-knitting {
-  @media (min-width: @desctop-width) {
-    width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    &::before {
+      content: "";
+      left: 490px;
+      bottom: 15px;
+    }
   }
 }

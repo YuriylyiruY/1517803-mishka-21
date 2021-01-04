@@ -1,9 +1,7 @@
 .form-color {
   border: none;
   border-top: 1px solid @light-green;
-  //position: relative;
   min-width: 260px;
-  //margin: 0 30px;
   padding: 10px 30px;
 
 
@@ -13,20 +11,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     border: none;
-    min-width: 568px;
-    margin-left: 174px;
+    min-width: 668px;
     margin-bottom: 100px;
-
-    &::before {
-      content: "";
-      background-color: @white-color;
-      position: absolute;
-      height: 304px;
-      padding: 0 150px;
-      left: -250px;
-      top: 0;
-      width: 100%;
-    }
+    padding: 0 50px;
+    //margin: 0;
+    background: red;
   }
 
   @media (min-width: @desctop-width) {
@@ -57,7 +46,9 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: flex-start;
-    width: 210px;
+    width: 120px;
+    margin-left: 178px;
+    background: blue;
   }
 }
 

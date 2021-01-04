@@ -18,7 +18,7 @@
       content: "";
       background-image: url("../img/zigzag-tablet.svg");
       background-repeat: repeat;
-      //  width: 100%;
+      width: 100%;
       height: 24px;
       position: absolute;
       left: 0;
@@ -49,15 +49,16 @@
   color: @braun-letters-color;
   padding: 17px 30px 17px 30px;
   min-width: 260px;
-  //margin: 0 30px;
 
   br {
     display: none;
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 69px;
-    padding: 0;
+    margin-top: 76px;
+    padding: 0 50px;
+    background: red;
+    min-width: 620px;
   }
 
   @media (min-width: @desctop-width) {
@@ -71,36 +72,4 @@
       display: block;
     }
   }
-}
-
-.note-form {
-  text-align: center;
-}
-
-.note-form__order-knitting {
-  text-align: left;
-}
-
-.order-knitting__submit {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: @braun-letters-color;
-  text-transform: uppercase;
-  //padding: 15px;
-  border: 2px solid @braun-letters-color;
-  background-color: transparent;
-  min-width: 260px;
-  padding: 15px 0;
-  margin: 0 auto;
-}
-
-.order-knitting {
-  // margin:0;
-  // padding:0;
-  //padding:0;
-  // min-width: 260px;
-  //background:blue;
-  width: 100%;
-  margin: 0 auto;
 }

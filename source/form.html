@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 </head>
 
 <body class="body">
@@ -100,10 +101,10 @@
             <span class="legend-name__wrap">ФИО</span>
           </legend>
           <div class="form-initials__wrap wrap-initials">
-            <label class="wrap-initials__content" for="first-name">Имя:</label>
+            <label class="wrap-initials__content-name" for="first-name">Имя:</label>
             <input class="wrap-initials__first-name placeholder-content" id="first-name" type="text" required
               placeholder="Введите ваше имя*">
-            </div>
+          </div>
           <div class="form-initials__wrap wrap-initials"><label class="wrap-initials__content"
               for="second-name">Фамилия:</label>
             <input class="wrap-initials__second-name placeholder-content" id="second-name" type="text" required
@@ -117,15 +118,16 @@
           <legend class="tel-form__legend legend-name">
             <span class="legend-name__wrap">Тел</span>
           </legend>
-          <p class="tel-form__for-svg tel-inside-block"> <input class="tel-inside-block__content placeholder-content"
-              type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required placeholder="+7 ХХХ ХХХ ХХ ХХ*"></p>
+          <p class="tel-form__for-svg tel-inside-block"> <input
+              class="tel-inside-block__content placeholder-content-tel" type="tel" name="tel"
+              pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required placeholder="+7 ХХХ ХХХ ХХ ХХ*"></p>
         </fieldset>
         <fieldset class="order-knitting__email-form email-form">
           <legend class="email-form__legend legend-name">
             <span class="legend-name__wrap">Email</span>
           </legend>
           <p class="email-form__for-svg email-inside-block"> <input
-              class="email-inside-block__content placeholder-content" type="email" name="email" required
+              class="email-inside-block__content placeholder-content-email" type="email" name="email" required
               placeholder="Ваш Email*">
           </p>
         </fieldset>
