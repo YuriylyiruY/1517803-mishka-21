@@ -10,6 +10,11 @@
     width: 100%;
     text-align: right;
   }
+
+  @media (min-width: @desctop-width) {
+    width: 95%;
+    text-align: right;
+  }
 }
 
 .note-form {
@@ -21,24 +26,15 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    //min-width: 668px;
     width: 100%;
-    // padding: 0 50px;
     padding: 0;
-    //margin: 0 auto;
     background: red;
   }
-}
 
-// .order-knitting {
-//   @media (min-width: @desctop-width) {
-//     width: 900px;
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//   }
-// }
+  @media (min-width: @desctop-width) {
+    width: 95%;
+  }
+}
 
 .order-knitting__submit {
   font-weight: bold;
@@ -46,7 +42,6 @@
   line-height: 16px;
   color: @braun-letters-color;
   text-transform: uppercase;
-  //padding: 15px;
   border: 2px solid @braun-letters-color;
   background-color: transparent;
   min-width: 260px;
@@ -56,7 +51,6 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 232px;
-    // height:30px;
     padding: 0;
   }
 }
