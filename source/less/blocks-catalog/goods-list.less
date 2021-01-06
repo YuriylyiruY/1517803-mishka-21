@@ -9,36 +9,57 @@
   }
 }
 
-.goods-item__link {
+.part__link {
   display: block;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: @black;
   margin-top: 30px;
-  padding-left: 28px;
+  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    // margin-left: 30px;
+  }
 }
 
-.goods-item__disсription {
+.part__disсription {
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
   color: @braun-letters-color;
-  padding-left: 28px;
-  width: 260px;
+  margin: 0 30px;
+  padding: 0 0 30px 0;
+  width: 200px;
+  border-bottom: 1px solid @ec-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    width: 265px;
+    padding: 0 0 181px 0;
+  }
 }
 
-.goods-item__price {
+.part__price {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: @black;
-  margin-left: 30px;
-  width: 250px;
+  width: 260px;
   padding: 30px 0;
-  border-top: 1px solid @ec-color;
   border-bottom: 1px solid @ec-color;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 0;
+    padding-left: 30px;
+    width: 304px;
+  }
+}
+
+.price__ru {
+  margin-left: 30px;
 }
 
 .img-goods {
@@ -98,13 +119,15 @@
 }
 
 .goods-item {
-  margin-left: 31px;
   display: flex;
   width: 260px;
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     flex-wrap: nowrap;
+    width: 668px;
+    padding: 0;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desctop-width) {
@@ -122,9 +145,13 @@
 }
 
 .goods-item-v {
+  margin-bottom: 50px;
+  border-top: 1px solid @ec-color;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   @media (min-width: @desctop-width) {
@@ -137,8 +164,20 @@
 .goods-item-v__pic {
   width: 260px;
   height: 150px;
-  margin: 0 auto;
   background-image: url("../img/video-mobile.svg");
+  position: relative;
+
+  &::before {
+
+    content: "";
+    background-image: url("../img/play.svg");
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 77px;
+    left: 85px;
+    top: 37px;
+    position: absolute;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -146,6 +185,20 @@
     height: 455px;
     background-image: url("../img/video-tablet.svg");
     order: 1;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+
+      content: "";
+      background-image: url("../img/play.svg");
+      background-repeat: no-repeat;
+      width: 101px;
+      height: 77px;
+      left: 285px;
+      top: 200px;
+      position: absolute;
+    }
   }
 }
 
@@ -153,13 +206,22 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
+  width: 200px;
+  background: red;
   color: @braun-letters-color;
-  margin: 30px 0;
+  margin: 30px auto;
+
 
   @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
     order: 3;
-    height: 20px;
-    margin: 20px 220px 40px 37px;
+    //height: 20px;
+    //margin: 20px 220px 40px 37px;
+    margin: 0 40px;
+    padding: 0;
+    width: 588px;
   }
 
   @media (min-width: @desctop-width) {
@@ -170,7 +232,7 @@
   }
 }
 
-.goods-item__button {
+.price__button {
   position: relative;
   left: 145px;
   border: none;
@@ -179,25 +241,26 @@
 
 .camera {
   position: relative;
+  width: 260px;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 400px;
+    width: 668px;
     order: 2;
   }
 }
 
 .camera-pic {
   position: absolute;
-  top: 13px;
-  left: 40px;
+  top: 12px;
+  left: 35px;
   background-image: url("../img/video-camera.svg");
   background-repeat: no-repeat;
   width: 32px;
   height: 22px;
 
   @media (min-width: @tablet-width) {
-    top: 22px;
+    top: 42px;
   }
 
   @media (min-width: @desctop-width) {
@@ -207,14 +270,26 @@
 }
 
 .camera-text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
   height: 70px;
+  margin-top: 20px;
   margin-left: 95px;
-  width: 1200px;
+  width: 260px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 133px;
+    //padding: 0;
+    background: red;
+    // width:1000px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: @desctop-width) {

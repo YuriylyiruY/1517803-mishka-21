@@ -7,4 +7,27 @@
   text-align: center;
   padding: 72px 0;
   margin-bottom: 30px;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    width: 668px;
+    height: 50px;
+    margin: 0 0 60px 0;
+    padding: 101px 0 75px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-tablet-catalog.svg");
+      background-repeat: no-repeat;
+      width: 668px;
+      height: 24px;
+      left: 0;
+      top: 205px;
+    }
+  }
 }
