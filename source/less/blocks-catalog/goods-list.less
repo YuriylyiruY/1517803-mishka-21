@@ -1,11 +1,77 @@
 .goods-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    margin: 0;
+    padding: 0;
+    // background: red;
+  }
 
   @media (min-width: @desctop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     //margin:0 50px;
+    width: 1050px;
+  }
+}
+
+.goods-item {
+  display: flex;
+  width: 100%;
+  // margin: 0 auto;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0;
+    height: 334px;
+    //margin: 0 auto;
+
+    border: 1px solid @ec-color;
+    border-right: none;
+    margin-bottom: 54px;
+    margin-left: 50px;
+    //  border: 2px solid black;
+  }
+
+  @media (min-width: @desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+
+    // border: 2px solid black;
+  }
+}
+
+.img-goods {
+  width: 100%;
+  padding: 0 30px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+.part {
+  width: 100%;
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding: 0;
+    border-right: 1px solid @ec-color;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 100%;
   }
 }
 
@@ -17,10 +83,18 @@
   color: @black;
   margin-top: 30px;
   margin-left: 30px;
+  width: 200px;
+
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin: 30px 0 0 0;
     // margin-left: 30px;
+  }
+
+  @media (min-width: @desctop-width) {
+    //padding: 0;
+    //margin: 0;
   }
 }
 
@@ -31,13 +105,28 @@
   color: @braun-letters-color;
   margin: 0 30px;
   padding: 0 0 30px 0;
-  width: 200px;
-  border-bottom: 1px solid @ec-color;
+  width: 80%;
 
   @media (min-width: @tablet-width) {
-    margin-left: 30px;
+    margin: 0;
     width: 265px;
     padding: 0 0 181px 0;
+  }
+}
+
+.part__disсription-double {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: @braun-letters-color;
+  margin: 0 30px;
+  padding: 0 0 30px 0;
+
+  @media (min-width: @tablet-width) {
+    // margin-left: 30px;
+    margin: 0;
+    width: 265px;
+    padding: 0 0 161px 0;
   }
 }
 
@@ -46,93 +135,90 @@
   font-size: 15px;
   line-height: 24px;
   color: @black;
-  width: 260px;
+  width: 100%;
   padding: 30px 0;
+  border-top: 1px solid @ec-color;
   border-bottom: 1px solid @ec-color;
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     padding: 20px 0;
-    padding-left: 30px;
-    width: 304px;
+    width: 314px;
+    border-bottom: none;
   }
 }
 
 .price__ru {
   margin-left: 30px;
-}
-
-.img-goods {
-  &__basket {
-    width: 260px;
-    height: 195px;
-    background-image: url("../img/baskets-for-toys.svg");
-
-    @media (min-width: @tablet-width) {
-      width: 334px;
-      height: 334px;
-      background-image: url("../img/basket-for-toys-tablet.svg");
-    }
-
-    @media (min-width: @desctop-width) {
-      width: 316px;
-      height: 462px;
-      background-image: url("../img/basket-desctop.svg");
-    }
-  }
-
-  &__bunny {
-    width: 260px;
-    height: 195px;
-    background-image: url("../img/bunny-toy.svg");
-
-    @media (min-width: @tablet-width) {
-      width: 334px;
-      height: 334px;
-      background-image: url("../img/bunny-toy-tablet.svg");
-    }
-
-    @media (min-width: @desctop-width) {
-      width: 316px;
-      height: 462px;
-      background-image: url("../img/bunny-desctop.svg");
-    }
-  }
-
-  &__big-basket-for-toys {
-    width: 260px;
-    height: 195px;
-    background-image: url("../img/big-basket-for-toys.svg");
-
-    @media (min-width: @tablet-width) {
-      width: 334px;
-      height: 334px;
-      background-image: url("../img/big-basket-for-toys-tablet.svg");
-    }
-
-    @media (min-width: @desctop-width) {
-      width: 316px;
-      height: 462px;
-      background-image: url("../img/big-basket-desctop.svg");
-    }
-  }
-}
-
-.goods-item {
-  display: flex;
-  width: 260px;
-  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    flex-wrap: nowrap;
-    width: 668px;
-    padding: 0;
-    margin-bottom: 54px;
+    margin: 0;
+  }
+}
+
+.img-goods__basket {
+  background-image: url("../img/baskets-for-toys.svg");
+  background-repeat: no-repeat;
+  height: 0;
+  padding-bottom: 75.25%;
+  width: 100%;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 334px;
+    background-image: url("../img/basket-for-toys-tablet.svg");
   }
 
   @media (min-width: @desctop-width) {
-    flex-wrap: wrap;
-    margin: 0;
+    width: 316px;
+    height: 462px;
+    background-image: url("../img/basket-desctop.svg");
+  }
+}
+
+.img-goods__bunny {
+  background-repeat: no-repeat;
+  height: 0;
+  padding-bottom: 75.25%;
+  width: 100%;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 334px;
+    background-image: url("../img/bunny-toy-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 316px;
+    height: 462px;
+    background-image: url("../img/bunny-desctop.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.img-goods__big-basket-for-toys {
+  background-image: url("../img/big-basket-for-toys.svg");
+  background-repeat: no-repeat;
+  height: 0;
+  padding-bottom: 75.25%;
+  width: 100%;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 334px;
+    background-image: url("../img/big-basket-for-toys-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 316px;
+    height: 462px;
+    background-image: url("../img/big-basket-desctop.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -145,13 +231,19 @@
 }
 
 .goods-item-v {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   border-top: 1px solid @ec-color;
+  background: blue;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 0;
+
+    //padding: 0;
+    border: none;
+    background: red;
+    width: 100%;
+    text-align: center;
   }
 
   @media (min-width: @desctop-width) {
@@ -162,10 +254,15 @@
 }
 
 .goods-item-v__pic {
-  width: 260px;
-  height: 150px;
+
   background-image: url("../img/video-mobile.svg");
+  background-repeat: no-repeat;
   position: relative;
+  height: 0;
+  padding-bottom: 60.25%;
+  width: 100%;
+  background-size: contain;
+
 
   &::before {
 
@@ -174,19 +271,21 @@
     background-repeat: no-repeat;
     width: 101px;
     height: 77px;
-    left: 85px;
-    top: 37px;
+    left: 35%;
+    top: 25%;
     position: absolute;
   }
 
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 668px;
+    justify-content: center;
+    align-items: center;
+    //width: 90%;
     height: 455px;
     background-image: url("../img/video-tablet.svg");
-    order: 1;
-    margin: 0;
+    margin-left: 50px;
     padding: 0;
+    width: 688px;
 
     &::before {
 
@@ -195,7 +294,7 @@
       background-repeat: no-repeat;
       width: 101px;
       height: 77px;
-      left: 285px;
+      left: 40%;
       top: 200px;
       position: absolute;
     }
@@ -206,10 +305,10 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  width: 200px;
+  min-width: 200px;
   background: red;
   color: @braun-letters-color;
-  margin: 30px auto;
+  padding: 0 40px;
 
 
   @media (min-width: @tablet-width) {
@@ -217,11 +316,10 @@
     font-size: 15px;
     line-height: 30px;
     order: 3;
-    //height: 20px;
-    //margin: 20px 220px 40px 37px;
-    margin: 0 40px;
+    margin: 0 100px;
     padding: 0;
     width: 588px;
+    text-align: left;
   }
 
   @media (min-width: @desctop-width) {
@@ -237,6 +335,29 @@
   left: 145px;
   border: none;
   background-color: transparent;
+
+  &::before {
+    content: "";
+    background-image: url("../img/basket-button.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    bottom: -2px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      background-image: url("../img/basket-button.svg");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 19px;
+      position: absolute;
+      bottom: -2px;
+      left: 100px;
+    }
+  }
 }
 
 .camera {
@@ -247,6 +368,10 @@
     display: flex;
     width: 668px;
     order: 2;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 1050px;
   }
 }
 
@@ -261,6 +386,7 @@
 
   @media (min-width: @tablet-width) {
     top: 42px;
+    left: 98px;
   }
 
   @media (min-width: @desctop-width) {
@@ -276,16 +402,15 @@
   height: 70px;
   margin-top: 20px;
   margin-left: 95px;
-  width: 260px;
+  width: 200px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 133px;
-    //padding: 0;
-    background: red;
-    // width:1000px;
+    margin-left: 63px;
+    background: green;
+    width: 400px;
 
     br {
       display: none;
