@@ -85,14 +85,19 @@
           <input class="week-goods-wraper__submit" type="submit" value="Заказать">
         </div>
         <div class="week-goods__pic"></div>
-        <form class="week-goods__order-form order-form">
-          <p class="order-form__order-title">Добавить в корзину</p>
-          <fieldset class="order-form__choose"> Выберите размер
-            <label><input type="checkbox" checked>S</label>
-            <label><input type="checkbox">M</label>
-            <label><input type="checkbox">L</label>
+        <form class="week-goods__order-form order-form-not">
+          <!--order-form-->
+          <p class="order-form__order-title">Добавить <br>в корзину</p>
+          <p class="order-form__title"> Выберите размер:</p>
+          <fieldset class="order-form__wrap choose-size">
+            <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox" checked><span
+                class="pic-size__span">s</span></label>
+            <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox"><span
+                class="pic-size__span">m</span></label>
+            <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox"><span
+                class="pic-size__span">l</span></label>
           </fieldset>
-          <input type="submit" value="Добавить">
+          <input class="order-form__submit" type="submit" value="Добавить">
         </form>
       </section>
       <section class="advantage">
@@ -195,6 +200,33 @@
       } else {
         navMain.classList.add('header-nav');
         navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+
+    var navMainForm = document.querySelector('.week-goods__order-form');
+    var navToggleForm = document.querySelector('.week-goods-wraper__submit');
+
+    navToggleForm.addEventListener('click', function () {
+      if (navMainForm.classList.contains('order-form-not')) {
+        navMainForm.classList.remove('order-form-not');
+        navMainForm.classList.add('order-form');
+      } else {
+        navMainForm.classList.add('order-form-not');
+        navMainForm.classList.remove('order-form');
+      }
+    });
+
+    var navMainFormNot = document.querySelector('.week-goods__order-form');
+    var navToggleFormNot = document.querySelector('.order-form__submit');
+
+    navToggleFormNot.addEventListener('click', function () {
+      if (navMainFormNot.classList.contains('order-form')) {
+        navMainFormNot.classList.remove('order-form');
+        navMainFormNot.classList.add('order-form-not');
+      } else {
+        navMainFormNot.classList.add('order-form');
+        navMainFormNot.classList.remove('order-form-not');
       }
     });
 
