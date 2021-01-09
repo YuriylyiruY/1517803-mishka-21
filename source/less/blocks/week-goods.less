@@ -14,8 +14,6 @@
   }
 
   @media (min-width: @desctop-width) {
-    // margin-top: 105px;
-    // min-width: 1050px;
     grid-template-columns: min-content 1fr 525px;
     grid-template-rows: 1fr;
   }
@@ -27,7 +25,6 @@
   font-size: 25px;
   line-height: 30px;
   color: @black;
-  background-color: green;
   margin-top: -20px;
   width: 100%;
 
@@ -57,7 +54,6 @@
     text-align: left;
     position: absolute;
     left: 220px;
-    // margin-bottom: 200px;
   }
 }
 
@@ -67,7 +63,6 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @light-green;
-  background-color: red;
   width: 100%;
   margin-top: 10px;
   align-items: flex-start;
@@ -130,7 +125,6 @@
 .week-goods-wraper__descraiption {
   width: 100%;
   margin-top: 20px;
-  background: green;
 
   @media (min-width: @tablet-width) {
     width: 85%;
@@ -148,10 +142,15 @@
 .week-goods-wraper__property {
   width: 100%;
   margin: 10px 0;
-  background: red;
+  border: none;
+  border-bottom: 1px solid @ec-color;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 90%;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 70%;
   }
 }
 
@@ -201,14 +200,21 @@
   }
 }
 
-.week-goods__pic {
+.week-goods__pic-first {
   background-image: url("../img/set-mobile.svg");
   background-repeat: no-repeat;
   height: 0;
   padding-bottom: 120.25%;
   width: 100%;
   background-size: contain;
+  margin-top: 27px;
 
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.week-goods__pic {
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -219,23 +225,18 @@
     background-repeat: no-repeat;
     min-height: 404px;
     width: 334px;
-    //background: blue;
     margin-right: 0;
   }
 
   @media (min-width: @desctop-width) {
-    //position: absolute;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    // bottom: 78px;
-    //left: 350px;
     background-image: url("../img/triple-desktop.svg");
     background-repeat: no-repeat;
     height: 636px;
     width: 525px;
-    //order: 3;
   }
 }
 

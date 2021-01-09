@@ -27,7 +27,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: red;
   }
 
   @media (min-width: @desctop-width) {
@@ -38,8 +37,7 @@
 
 .header__link-logo {
   position: static;
-  background-position: 50% 50%;
-  display: flex;
+  background-position: 10% 120%;
   width: 200px;
   margin: 0 auto;
   justify-content: center;
@@ -69,7 +67,6 @@
 
 // основные разделы верхней части навигации
 .header-item {
-  background: blue;
   width: 260px;
   margin: 0 auto;
   z-index: 7;
@@ -86,7 +83,7 @@
 
   @media (min-width: @desctop-width) {
     order: 1;
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -129,13 +126,14 @@
   list-style: none;
   flex-direction: column;
 
+  margin-left: 75px;
+
   @media (min-width: @tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
     width: 45%;
     height: 90px;
     margin: 0;
-    background: magenta;
   }
 }
 
@@ -143,6 +141,7 @@
   display: flex;
   list-style: none;
   flex-direction: column;
+  margin-left: 75px;
 
   @media (min-width: @tablet-width) {
 
@@ -151,7 +150,6 @@
     width: 55%;
     flex-wrap: wrap;
     flex-direction: row;
-    background: tomato;
     justify-content: flex-end;
   }
 
@@ -165,7 +163,6 @@
 //Поисковик
 .search-result__pic {
   @media (min-width: @tablet-width) {
-    background: rgb(38, 0, 128);
     width: 85px;
     height: 90px;
 
@@ -188,7 +185,6 @@
 }
 
 .search-result__enter {
-  background: rosybrown;
   margin: 0 auto 0 0;
   width: 260px;
 
@@ -199,7 +195,6 @@
 
 .search-result {
   display: flex;
-  background: gold;
   width: 260px;
   margin: 0 auto;
   position: relative;
@@ -218,7 +213,6 @@
 
 // Корзина
 .basket {
-  background: gold;
   width: 260px;
   margin: 0 auto;
 
@@ -230,7 +224,6 @@
 
 .wrap-basket {
   display: flex;
-  background: blue;
   position: relative;
   width: 260px;
   margin: 0 auto;
@@ -242,7 +235,6 @@
 
 .wrap-basket__basket {
   display: flex;
-  background: red;
   width: 33%;
   margin: 0;
   box-sizing: border-box;
@@ -274,7 +266,6 @@
 }
 
 .wrap-basket__result {
-  background: green;
   margin: 0 auto;
   width: 67%;
 
@@ -320,6 +311,8 @@
 
 //кнопка
 .header-nav {
+  height: 80px;
+
   @media (max-width: @mobile-width-only) {
     & .header-nav__list-down {
       display: none;
@@ -364,7 +357,7 @@
 .header-nav__nav-toggle::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 33px;
   left: 17px;
   width: 21px;
   height: 2px;
@@ -373,7 +366,6 @@
 }
 
 .header-nav__nav-toggle:active::before {
-  //background-color: fade(#ffffff, 30%);
   background-color: @button-color;
   box-shadow:
     0 6px 0 0 @button-color,
