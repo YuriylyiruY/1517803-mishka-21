@@ -193,8 +193,18 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 80px;
+  outline: none;
   border: 2px solid @braun-letters-color;
   width: 100%;
+
+  &:hover {
+    background: @gray-rgba;
+    color: @background-main-color;
+  }
+
+  &[value]:active {
+    color: @background-main-color-opacity;
+  }
 
   @media (min-width: @tablet-width) {
     width: 39%;
@@ -250,7 +260,7 @@
   top: 380px;
   background-color: @background-main-color;
   border: 2px solid @c6-color;
-  box-shadow: 0 5px 10px @box-color-black;
+  box-shadow: 5px 10px @box-color-black;
 
   @media (min-width: @tablet-width) {
     left: 100px;

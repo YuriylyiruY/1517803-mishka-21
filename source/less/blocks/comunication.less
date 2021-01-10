@@ -124,7 +124,18 @@
   font-size: 14px;
   line-height: 30px;
   width: 80%;
+  height: 30px;
   margin-left: 20px;
+  border-bottom: 1px solid @underline-color;
+
+  &:hover {
+    color: @underline-hover-color;
+    border-bottom: 1px solid @underline-hover-color;
+  }
+
+  &:active {
+    border-bottom: 1px solid @underline-active-color;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
