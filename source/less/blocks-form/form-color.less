@@ -70,6 +70,20 @@
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
   left: -65px;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-down.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .content-color__input:checked + .content-color__checkbox {
@@ -77,4 +91,18 @@
   width: 40px;
   background-image: url("../img/active-checkbox.svg");
   background-repeat: no-repeat;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/hover-check.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/down-check.svg");
+    background-repeat: no-repeat;
+  }
 }

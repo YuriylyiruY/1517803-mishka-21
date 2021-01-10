@@ -68,6 +68,16 @@
     grid-row-start: 1;
     grid-row-end: 2;
 
+    &:hover::before {
+      background-image: url("../img/phone-green.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:active::before {
+      background-image: url("../img/phone-green.svg");
+      background-repeat: no-repeat;
+    }
+
     &::before {
 
       content: "";
@@ -113,6 +123,16 @@
 }
 
 .email-inside-block {
+  &:hover::before {
+    background-image: url("../img/mail-green.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::before {
+    background-image: url("../img/mail-green.svg");
+    background-repeat: no-repeat;
+  }
+
   &::before {
 
     content: "";
@@ -168,6 +188,10 @@
   }
 }
 
+.placeholder-content-tel::placeholder {
+  color: @black-active;
+}
+
 .placeholder-content-tel {
   font-weight: 400;
   font-size: 17px;
@@ -179,6 +203,14 @@
   width: 100%;
   border: none;
   border-bottom: 2px solid @black;
+
+  &:hover {
+    border-bottom: 2px solid @underline-color;
+  }
+
+  &:active {
+    border-bottom: 2px solid @underline-color;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -195,6 +227,10 @@
   }
 }
 
+.placeholder-content-email::placeholder {
+  color: @black-active;
+}
+
 .placeholder-content-email {
   font-weight: 400;
   font-size: 17px;
@@ -206,6 +242,14 @@
   width: 100%;
   border: none;
   border-bottom: 2px solid @black;
+
+  &:hover {
+    border-bottom: 2px solid @underline-color;
+  }
+
+  &:active {
+    border-bottom: 2px solid @underline-color;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
