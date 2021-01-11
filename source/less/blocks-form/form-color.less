@@ -1,16 +1,17 @@
 .form-color-first {
-  display: grid;
-  grid-template-columns: 50px 168px 1fr 50px;
-  grid-template-rows: 1fr;
-  background: @white-color;
+  @media (min-width: @tablet-width) {
+    background: @white-color;
+    display: grid;
+    grid-template-columns: 50px 168px 1fr 50px;
+    grid-template-rows: 1fr;
+  }
 }
 
 .form-color {
   border: none;
   border-top: 1px solid @light-green;
   min-width: 260px;
-  padding: 10px 30px;
-
+  padding: 10px 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
