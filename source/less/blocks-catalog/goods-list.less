@@ -79,6 +79,14 @@
     margin-top: 0;
     border: 1px solid @ec-color;
     border-top: none;
+
+    &:hover {
+      box-shadow: 0 6px 10px @border-rgba;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px @border-rgba;
+    }
   }
 }
 
@@ -92,6 +100,13 @@
   margin-left: 30px;
   width: 200px;
 
+  &:hover {
+    color: @black-hover;
+  }
+
+  &:active {
+    color: @black-active;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -291,16 +306,19 @@
   }
 }
 
-.goods-item-v__pic {
+.play {
+  &:hover::before {
+    transform: scale(1.2);
+    width: 101px;
+    height: 77px;
+  }
 
-  background-image: url("../img/video-mobile.svg");
-  background-repeat: no-repeat;
-  position: relative;
-  height: 0;
-  padding-bottom: 60.25%;
-  width: 100%;
-  background-size: contain;
-
+  &:active::before {
+    transform: scale(0.8);
+    opacity: 0.6;
+    width: 101px;
+    height: 77px;
+  }
 
   &::before {
 
@@ -315,14 +333,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: center;
-    height: 455px;
-    width: 668px;
-    background-image: url("../img/video-tablet.svg");
-    margin-left: 50px;
-    padding: 0;
-
     &::before {
 
       content: "";
@@ -334,6 +344,26 @@
       top: 45%;
       position: absolute;
     }
+  }
+}
+
+.goods-item-v__pic {
+  background-image: url("../img/video-mobile.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  height: 0;
+  padding-bottom: 60.25%;
+  width: 100%;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    height: 455px;
+    width: 668px;
+    background-image: url("../img/video-tablet.svg");
+    margin-left: 50px;
+    padding: 0;
   }
 
   @media (min-width: @desctop-width) {
@@ -379,10 +409,22 @@
   left: 145px;
   border: none;
   background-color: transparent;
+  outline: none;
+
+  &:hover::before {
+    background-image: url("../img/cart-green.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active::before {
+    background-image: url("../img/cart-green.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
-    background-image: url("../img/basket-button.svg");
+    background-image: url("../img/cart.svg");
     background-repeat: no-repeat;
     width: 20px;
     height: 19px;
