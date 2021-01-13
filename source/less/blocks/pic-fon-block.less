@@ -1,18 +1,16 @@
 .promo-pic {
-  background-image: url("../img/mishka-fon.svg");
-  background-repeat: no-repeat;
-  min-height: 373px;
-  width: 100%;
-  background-position: 50% 50%;
+  // background-image: url("../img/mishka-fon.svg");
+  // background-repeat: no-repeat;
+  height: 373px;
+  min-width: 260px;
+  text-align: center;
   background-color: @f9-color;
-  position: relative;
   border-top: 1px solid @border-rgba;
 
-
   @media (min-width: @tablet-width) {
-    background-image: url("../img/hero-tablet.svg");
-    background-repeat: no-repeat;
-    min-height: 746px;
+    // background-image: url("../img/hero-tablet.svg");
+    // background-repeat: no-repeat;
+    height: 746px;
     min-width: 100%;
     margin-top: -109px;
     border-top: 1px solid @border-rgba;
@@ -30,8 +28,8 @@
   }
 
   @media (min-width: @desctop-width) {
-    background-image: url("../img/hero-desktop.svg");
-    background-repeat: no-repeat;
+    // background-image: url("../img/hero-desktop.svg");
+    // background-repeat: no-repeat;
     height: 746px;
     min-width: 1000px;
 
@@ -50,25 +48,13 @@
   }
 }
 
-
-.promo-pic__text {
-  background-image: url("../img/text.svg");
-  background-repeat: no-repeat;
-  min-height: 300px;
-  min-width: 320px;
-  background-position: 50% 50%;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/text-tablet.svg");
-    background-repeat: no-repeat;
-    min-height: 746px;
-    min-width: 765px;
-  }
-
-  @media (min-width: @desctop-width) {
-    background-image: url("../img/text-desktop.svg");
-    background-repeat: no-repeat;
-    min-height: 746px;
-    min-width: 1150px;
-  }
+.p {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  left: 10%;
+  top: 190px;
+  color: black;
+  position: absolute;
+  width: 80%;
 }
