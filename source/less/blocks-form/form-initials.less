@@ -1,56 +1,130 @@
 .form-initials {
   border: none;
-  border-top: 1px solid #63d1bb;
+  border-top: 1px solid @light-green;
+  min-width: 260px;
+  padding: 15px 30px;
 
   @media (min-width: @tablet-width) {
     border: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
-    width: 668px;
+    width: 100%;
+    height: 210px;
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 95%;
   }
 }
 
-.form-initials__content {
-  position: absolute;
-  left: -15px;
-  bottom: -7px;
-  background: @background-main-color;
-  width: 70px;
-}
+.wrap-initials {
+  margin: 10px 0 10px 0;
 
-.form-initials__wrap {
   @media (min-width: @tablet-width) {
-    display: flex;
     width: 100%;
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .wrap-initials__content {
-  margin: 10px;
-  margin-left: -13px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: @black;
 
   @media (min-width: @tablet-width) {
     display: flex;
     width: 15%;
-    margin-right: 35px;
+    margin-right: 15px;
   }
 }
 
-.placeholder-content {
-  font-weight: normal;
+.wrap-initials__content-name {
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: @black;
-  opacity: 0.3;
-  margin: 0 10px;
-  margin-left: -13px;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    width: 56%;
+    display: flex;
+    width: 10%;
+    margin-right: 5px;
+  }
+}
+
+.placeholder-content::placeholder {
+  color: @black-active;
+}
+
+.placeholder-content {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  position: relative;
+  margin-top: 5px;
+  padding: 15px 0;
+  margin-bottom: 5px;
+  width: 100%;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
     height: 30px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+}
+
+.wrap-initials__first-name {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid @black;
+
+  &:hover {
+    border-bottom: 2px solid @underline-color;
+  }
+
+  &:active {
+    border-bottom: 2px solid @underline-color;
+  }
+}
+
+.wrap-initials__second-name {
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid @black;
+
+  &:hover {
+    border-bottom: 2px solid @underline-color;
+  }
+
+  &:active {
+    border-bottom: 2px solid @underline-color;
+  }
+}
+
+.wrap-initials__father-name {
+  margin-bottom: 10px;
+  width: 100%;
+  border-style: none;
+  border-bottom: 2px solid @black;
+
+  &:hover {
+    border-bottom: 2px solid @underline-color;
+  }
+
+  &:active {
+    border-bottom: 2px solid @underline-color;
   }
 }

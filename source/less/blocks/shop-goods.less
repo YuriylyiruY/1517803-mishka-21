@@ -10,24 +10,92 @@
 }
 
 .shop-goods {
+  margin-top: -72px;
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     display: flex;
-  }
-
-  &-interior {
-    background-color: @light-green;
+    margin-top: -120px;
     width: 100%;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      width: 50%;
-    }
+.shop-goods-interior {
+  background-color: @light-green;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px) scaleY(1.05);
+    background-color: @hover-light-green;
   }
 
-  &-toys {
-    background-color: @dark-green;
-
-    @media (min-width: @tablet-width) {
-      width: 50%;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/interior.svg");
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 62px;
+    right: 45px;
+    top: 10px;
+    opacity: 0.5;
   }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    height: 107px;
+    margin: 0;
+  }
+}
+
+.shop-goods-toys {
+  background-color: @dark-green;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px) scaleY(1.05);
+    background-color: @hover-dark-green;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/toy.svg");
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 61px;
+    right: 30px;
+    top: 10px;
+    opacity: 0.5;
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    height: 107px;
+    margin: 0;
+  }
+}
+
+.shop-goods-interior__link {
+  width: 100px;
+}
+
+.shop-goods-toys__link {
+  width: 100px;
 }

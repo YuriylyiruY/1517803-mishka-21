@@ -1,19 +1,21 @@
 .form-type {
   border: none;
-  border-top: 1px solid #63d1bb;
+  border-top: 1px solid @light-green;
   display: flex;
   flex-direction: column;
-  position: relative;
-  justify-content: space-around;
   height: 110px;
+  padding: 10px 30px;
+  min-width: 260px;
+
 
   @media (min-width: @tablet-width) {
     border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 668px;
-    justify-content: flex-start;
+    width: 400px;
+    margin: 50px 0;
+    padding: 0;
   }
 }
 
@@ -28,17 +30,16 @@
 .content-things {
   position: relative;
   display: flex;
+  height: 50px;
+  margin-left: 65px;
   align-items: center;
-  min-width: 50px;
-  width: auto;
-  height: 70px;
-  margin-left: 50px;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    min-width: 240px;
+    width: 100%;
     justify-content: flex-start;
-    margin-left: 10px;
+    margin: 0 0 0 120px;
+    padding: 0;
   }
 }
 
@@ -54,8 +55,22 @@
   background-repeat: no-repeat;
   left: -65px;
 
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/border-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/border-down.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: @tablet-width) {
-    left: -65px;
+    left: -60px;
   }
 }
 
@@ -64,4 +79,18 @@
   width: 40px;
   background-image: url("../img/active-radio.svg");
   background-repeat: no-repeat;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/hover-radio.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/down-radio.svg");
+    background-repeat: no-repeat;
+  }
 }

@@ -1,0 +1,56 @@
+.note-form__order-knitting {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: @braun-letters-color;
+  margin: 20px 0;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    text-align: right;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 95%;
+    text-align: right;
+  }
+}
+
+.note-form {
+  min-width: 260px;
+  padding: 0 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 95%;
+  }
+}
+
+.order-knitting__submit {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: @braun-letters-color;
+  text-transform: uppercase;
+  border: 2px solid @braun-letters-color;
+  background-color: transparent;
+  min-width: 260px;
+  padding: 15px 0;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 232px;
+    padding: 0;
+  }
+}

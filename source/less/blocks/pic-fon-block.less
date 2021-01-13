@@ -1,49 +1,74 @@
 .promo-pic {
-  display: flex;
   background-image: url("../img/mishka-fon.svg");
   background-repeat: no-repeat;
-  min-height: 300px;
-  min-width: 320px;
-  justify-content: center;
-  align-items: center;
+  min-height: 373px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-color: @f9-color;
+  position: relative;
+  border-top: 1px solid @border-rgba;
+
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.promo-pic-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
     background-image: url("../img/hero-tablet.svg");
     background-repeat: no-repeat;
     min-height: 746px;
-    min-width: 765px;
-    justify-content: center;
-    align-items: center;
+    min-width: 100%;
+    margin-top: -109px;
+    border-top: 1px solid @border-rgba;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-tablet.svg");
+      min-width: 100%;
+      min-height: 24px;
+      left: 0;
+      bottom: -1px;
+      z-index: 5;
+    }
   }
 
   @media (min-width: @desctop-width) {
-    display: none;
+    background-image: url("../img/hero-desktop.svg");
+    background-repeat: no-repeat;
+    height: 746px;
+    min-width: 1000px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-desktop1.svg");
+      width: 100%;
+      min-height: 34px;
+      left: 0;
+      bottom: -1px;
+      z-index: 5;
+      background-size: cover;
+    }
   }
 }
 
-.promo-pic-desctop {
-  display: none;
+
+.promo-pic__text {
+  background-image: url("../img/text.svg");
+  background-repeat: no-repeat;
+  min-height: 300px;
+  min-width: 320px;
+  background-position: 50% 50%;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    background-image: url("../img/text-tablet.svg");
+    background-repeat: no-repeat;
+    min-height: 746px;
+    min-width: 765px;
   }
 
   @media (min-width: @desctop-width) {
-    display: flex;
-    background-image: url("../img/hero1.svg");
+    background-image: url("../img/text-desktop.svg");
     background-repeat: no-repeat;
     min-height: 746px;
     min-width: 1150px;
-    justify-content: center;
-    align-items: center;
   }
 }

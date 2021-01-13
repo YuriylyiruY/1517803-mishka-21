@@ -1,14 +1,30 @@
+.form-color-first {
+  display: grid;
+  grid-template-columns: 50px 168px 1fr 50px;
+  grid-template-rows: 1fr;
+  background: @white-color;
+}
+
 .form-color {
   border: none;
-  border-top: 1px solid #63d1bb;
+  border-top: 1px solid @light-green;
+  min-width: 260px;
+  padding: 10px 30px;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     border: none;
-    width: 668px;
+    width: 100%;
+    margin-bottom: 0 0 100px 0;
+    padding: 0;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   @media (min-width: @desctop-width) {
@@ -32,14 +48,18 @@
   position: relative;
   margin: 20px;
   display: flex;
-  margin-left: 50px;
+  margin-left: 65px;
   height: 40px;
   align-items: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: flex-start;
-    width: 180px;
+    width: 30%;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 20%;
   }
 }
 
@@ -50,6 +70,20 @@
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
   left: -65px;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-down.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .content-color__input:checked + .content-color__checkbox {
@@ -57,4 +91,18 @@
   width: 40px;
   background-image: url("../img/active-checkbox.svg");
   background-repeat: no-repeat;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/hover-check.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/down-check.svg");
+    background-repeat: no-repeat;
+  }
 }

@@ -1,9 +1,18 @@
 .copyright {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
-  margin-left: 31px;
-  margin-right: 31px;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    height: 143px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .copyright__title {
@@ -11,4 +20,20 @@
   font-size: 19px;
   line-height: 18px;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 25px;
+  }
+}
+
+.copyright__link {
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 21px;
+  }
 }

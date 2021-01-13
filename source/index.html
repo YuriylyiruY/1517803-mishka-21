@@ -7,17 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+</head>
 <body class="body">
   <div class="body-wraper">
+
     <header class="header">
       <nav class="header__nav header-nav">
-        <ul class="header-nav__list-up">
-          <li class="header-nav__item header-nav-item"><a class="header__link-logo" href="index.html"><img
-                src="img/mishka-logo.svg" width="86" height="35" alt="логотип Мишка»"></a>
-            <button class="header-nav__nav-toggle visually-hidden" type="button"><span>Закрыть
+        <ul class="header-nav__list-up ">
+          <li class="header-nav__item  header-nav-item"><a class="header__link-logo" href="index.html"></a>
+            <button class="header-nav__nav-toggle" type="button"><span class="visually-hidden">Закрыть
                 меню</span></button>
           </li>
           <li class="header-nav__item header-item">
@@ -40,13 +41,13 @@
           </li>
         </ul>
         <ul class="header-nav__list-down">
-          <li class="header-nav__item search-result"><input class="search-result__enter " type="text" name="search"
-              id="search" value="Поиск по сайту">
+          <li class="header-nav__item search-result"><input class="search-result__enter" type="text" name="search"
+              id="search" value="Поиск по сайту"><a class="search-result__pic"></a>
           </li>
           <li class="header-nav__wrap-basket basket">
             <div class="basket__div wrap-basket">
-              <p class="wrap-basket__basket">Корзина:</p>
-              <span class="wrap-basket__result">пока пуста</span>
+              <p class="wrap-basket__basket">Корзина: пока пуста</p>
+              <span class="wrap-basket__result"></span>
             </div>
           </li>
           <li class="header-nav__delivery delivery">
@@ -56,14 +57,10 @@
       </nav>
     </header>
     <main class="main">
-      <section class="promo-pic"> <img class="promo-pic__text" src="img/text.svg"
-          alt="Изображение изделий на фоне игрушечного домика">
-      </section>
-      <section class="promo-pic-tablet"> <img class="promo-pic-tablet__text" src="img/text-tablet.svg"
-          alt="Изображение изделий на фоне игрушечного домика">
-      </section>
-      <section class="promo-pic-desctop"> <img class="promo-pic-desctop__text" src="img/text1.svg"
-          alt="Изображение изделий на фоне игрушечного домика">
+      <section class="promo-pic">
+        <div class="promo-pic__wrap">
+          <div class="promo-pic__text"></div>
+        </div>
       </section>
       <section class="shop-goods">
         <h1 class="visually-hidden"> Товары магазина</h1>
@@ -73,28 +70,34 @@
       </section>
       <section class="week-goods">
         <h2 class="week-goods__name">Вязаные корзинки</h2>
-        <h3 class="week-goods__title"> Товар недели</h3>
+        <h3 class="week-goods__title god">Товар <br> недели</h3>
         <div class="week-goods__wraper week-goods-wraper">
-          <p class="week-goods-wraper__descraiption">Экологически чистая пряжа, <br> ручная работа.
-            Доступны в шести <br> расцветках, и трех размерах.</p>
-          <p class="week-goods-wraper__property">Цвет:</p>
-          <p class="week-goods-wraper__description-property">«Тифани»/серый</p>
-          <p class="week-goods-wraper__property">Диаметр:</p>
-          <p class="week-goods-wraper__description-property">25см</p>
-          <p class="week-goods-wraper__property">Высота:</p>
-          <p class="week-goods-wraper__description-property">15см</p>
+          <p class="week-goods-wraper__descraiption">Экологически чистая пряжа, ручная работа.
+            Доступны в шести расцветках, и трех размерах.</p>
+          <p class="week-goods-wraper__property">Цвет:<span
+              class="week-goods-wraper__description-color">«Тиффани»/серый</span></p>
+          <p class="week-goods-wraper__property">Диаметр:<span
+              class="week-goods-wraper__description-diametr">25см</span></p>
+          <p class="week-goods-wraper__property">Высота:<span class="week-goods-wraper__description-height">15см</span>
+          </p>
+          <div class="week-goods__pic-first"></div>
           <p class="week-goods-wraper__price">Цена: 990 руб.</p>
           <input class="week-goods-wraper__submit" type="submit" value="Заказать">
         </div>
         <div class="week-goods__pic"></div>
-        <form class="week-goods__order-form order-form">
-          <p class="order-form__order-title">Добавить в корзину</p>
-          <fieldset class="order-form__choose"> Выберите размер
-            <label><input type="checkbox" checked>S</label>
-            <label><input type="checkbox">M</label>
-            <label><input type="checkbox">L</label>
+        <form class="week-goods__order-form order-form-not">
+          <!--order-form-->
+          <p class="order-form__order-title">Добавить <br>в корзину</p>
+          <p class="order-form__title"> Выберите размер:</p>
+          <fieldset class="order-form__wrap choose-size">
+            <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox" checked><span
+                class="pic-size__span">s</span></label>
+            <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox"><span
+                class="pic-size__span">m</span></label>
+            <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox"><span
+                class="pic-size__span">l</span></label>
           </fieldset>
-          <input type="submit" value="Добавить">
+          <input class="order-form__submit" type="submit" value="Добавить">
         </form>
       </section>
       <section class="advantage">
@@ -102,18 +105,18 @@
         <h3 class="advantage__title">Коротко о нас:</h3>
         <div class="advantages">
           <ul class="advantages__list advantages-list">
-            <li class="advantages-list__descraption">Экологически <br> чистые материалы</li>
-            <li class="advantages-list__descraption">Скандинавский стиль <br> по российской цене</li>
-            <li class="advantages-list__descraption">Увеличивает лайки <br> на фотографиях</li>
+            <li class="advantages-list__descraption pic">Экологически <br> чистые материалы</li>
+            <li class="advantages-list__descraption pic-1">Скандинавский стиль <br> по российской цене</li>
+            <li class="advantages-list__descraption pic-2">Увеличивает лайки <br> на фотографиях</li>
           </ul>
           <ul class="advantages__list advantages-list-down">
-            <li class="advantages-list-down__descraption">Связано вручную <br> с любовью и умилением</li>
-            <li class="advantages-list-down__descraption">Поддержка отечественного <br> производителя</li>
-            <li class="advantages-list-down__descraption">Поставляется <br>в подарочной упаковке</li>
+            <li class="advantages-list-down__descraption pic-3">Связано вручную <br> с любовью и умилением</li>
+            <li class="advantages-list-down__descraption pic-4">Поддержка отечественного <br> производителя</li>
+            <li class="advantages-list-down__descraption pic-5">Поставляется <br>в подарочной упаковке</li>
           </ul>
         </div>
       </section>
-      <section class="comment">
+      <article class="comment">
         <div class="comment__wraper comment-wraper">
           <h2 class="comment-wraper__opinion">Отзывы:</h2>
           <p class="comment-wraper__write-opinion">
@@ -124,39 +127,45 @@
           </p>
           <p class="comment-wraper__autor">Анастасия Красильникова </p>
           <p class="comment-wraper__autor-address">@misssssiskras</p>
-          <div class="comment-wraper__button button-direction">
-            <label class="button-direction__left btn"> <button class="btn__style" type="button">
-                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
-                </svg>
-              </button>
-            </label>
-            <label class="button-direction__right btn"> <button class="btn__style" type="button">
-                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
-                </svg>
-              </button>
-            </label>
-          </div>
-          <label class="comment-wraper__send-comment write-comment"><input class="write-comment__btn" type="submit"
+        </div>
+        <div class="comment__button button-direction">
+          <label class="button-direction__left btn"> <button class="btn__style svg-fill" type="button">
+              <svg class="svg-fill__row" width="50" height="26" viewBox="0 0 50 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" />
+                <!--fill="black"  -->
+              </svg>
+            </button>
+          </label>
+          <label class="button-direction__right btn"> <button class="btn__style svg-fill" type="button">
+              <svg class="svg-fill__row" width="50" height="26" viewBox="0 0 50 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" />
+              </svg>
+            </button>
+          </label>
+          <label class="comment__send-comment write-comment"><input class="write-comment__btn" type="submit"
               value="Написать">
           </label>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
+      </article>
       <section class="comunication">
         <div class="comunication__wraper comunication-wraper">
           <h2 class="comunication-wraper__title">Контакты</h2>
-          <p class="comunication-wraper__email">e-mail:</p>
-          <p class="comunication-wraper__name-email">info@mimimishkashop.ru</p>
-          <p class="comunication-wraper__address">адрес:</p>
-          <p class="comunication-wraper__show-address-shop">г. Санкт-Петербург <br>ул. Большая Конюшенная <br> д.
-            19/8 офис 101</p>
-          <div class="comunication-wraper__map"></div>
-          <input class="comunication-wraper__submit" type="submit" value="Напишите нам">
+          <p class="comunication-wraper__email">e-mail:<span
+              class="comunication-wraper__name-email">info@mimimishkashop.ru</span></p>
+          <p class="comunication-wraper__address">адрес: <span class="comunication-wraper__show-address-shop">г.
+              Санкт-Петербург <br>ул. Большая Конюшенная <br> д.
+              19/8 офис 101</span></p>
         </div>
+        <div class="comunication__map map"><iframe class="map__google"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603824136705!2d30.32332844738809!3d59.93871586989493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1608879638917!5m2!1sru!2sru"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div><input class="comunication-wraper__submit" type="submit" value="Напишите нам">
       </section>
+    </main>
+    <footer class="footer">
       <section class="footer-mishka">
         <a class="footer-mishka__link-logo" href="index.html"><img src="img/mishka-logo.svg" width="86" height="35"
             alt="логотип Мишка»"></a>
@@ -165,24 +174,66 @@
         <h2 class="visually-hidden">Контакты в социальных сетях</h2>
         <ul class="socials-icon__list icon-list">
           <li class="icon-list__item icon-item">
-            <a class="icon-item__link" href="#!" target="_blank">VK</a>
+            <a class="icon-item__insta" href="#!" target="_blank"></a>
           </li>
           <li class="icon-list__item icon-item">
-            <a class="icon-item__link" href="#!" target="_blank">Facebook</a>
+            <a class="icon-item__fb" href="#!" target="_blank"></a>
           </li>
           <li class="icon-list__item icon-item">
-            <a class="icon-item__link" href="#!" target="_blank">Twitter</a>
+            <a class="icon-item__twitter" href="#!" target="_blank"></a>
           </li>
         </ul>
       </section>
       <section class="copyright">
         <h2 class="visually-hidden">Авторы проекта</h2>
         <h3 class="copyright__title"> Разработано</h3>
-        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">Copyright
+        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
         </a>
       </section>
     </footer>
   </div>
+  <script>
+    var navMain = document.querySelector('.header__nav');
+    var navToggle = document.querySelector('.header-nav__nav-toggle');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('header-nav')) {
+        navMain.classList.remove('header-nav');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('header-nav');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+
+    var navMainForm = document.querySelector('.week-goods__order-form');
+    var navToggleForm = document.querySelector('.week-goods-wraper__submit');
+
+    navToggleForm.addEventListener('click', function () {
+      if (navMainForm.classList.contains('order-form-not')) {
+        navMainForm.classList.remove('order-form-not');
+        navMainForm.classList.add('order-form');
+      } else {
+        navMainForm.classList.add('order-form-not');
+        navMainForm.classList.remove('order-form');
+      }
+    });
+
+    var navMainFormNot = document.querySelector('.week-goods__order-form');
+    var navToggleFormNot = document.querySelector('.order-form__submit');
+
+    navToggleFormNot.addEventListener('click', function () {
+      if (navMainFormNot.classList.contains('order-form')) {
+        navMainFormNot.classList.remove('order-form');
+        navMainFormNot.classList.add('order-form-not');
+      } else {
+        navMainFormNot.classList.add('order-form');
+        navMainFormNot.classList.remove('order-form-not');
+      }
+    });
+
+  </script>
 </body>
 
 </html>
