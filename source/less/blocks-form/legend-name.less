@@ -116,6 +116,9 @@
 .order-knitting {
   width: 100%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -133,6 +136,11 @@
 }
 
 .form-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -142,6 +150,12 @@
 }
 
 .form-color-first {
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -151,6 +165,11 @@
 }
 
 .form-initials {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -160,6 +179,11 @@
 }
 
 .tel-form {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -169,6 +193,11 @@
 }
 
 .email-form {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -178,6 +207,11 @@
 }
 
 .comment-textarea {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -187,6 +221,11 @@
 }
 
 .note-form {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-column-end: 4;
