@@ -1,21 +1,31 @@
 .promo-pic {
-  background-image: url("../img/mishka-fon.svg");
+  background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
-  min-height: 373px;
+  height: 373px;
   width: 100%;
+
   background-position: 50% 50%;
   background-color: @f9-color;
   position: relative;
   border-top: 1px solid @border-rgba;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.png");
+    background-size: 238px auto;
+  }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/hero-tablet.svg");
+    background-image: url("../img/week.png");
     background-repeat: no-repeat;
     min-height: 746px;
     min-width: 100%;
     margin-top: -109px;
     border-top: 1px solid @border-rgba;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/week-goods-desktop@2x.png");
+      background-size: 768px auto;
+    }
 
     &::after {
       content: "";
@@ -30,11 +40,15 @@
   }
 
   @media (min-width: @desctop-width) {
-    background-image: url("../img/hero-desktop.svg");
+    background-image: url("../img/week.png");
     background-repeat: no-repeat;
     height: 746px;
     min-width: 1000px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/week-goods-desktop@2x.png");
+      background-size: 768px auto;
+    }
 
     &::after {
       content: "";
@@ -50,25 +64,51 @@
   }
 }
 
+.image-fon__text {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  left: 10%;
+  top: 120px;
+  color: @black;
+  position: absolute;
+  width: 80%;
+  text-align: center;
 
-.promo-pic__text {
-  background-image: url("../img/text.svg");
-  background-repeat: no-repeat;
-  min-height: 300px;
-  min-width: 320px;
-  background-position: 50% 50%;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/text-tablet.svg");
-    background-repeat: no-repeat;
-    min-height: 746px;
-    min-width: 765px;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    top: 200px;
   }
 
   @media (min-width: @desctop-width) {
-    background-image: url("../img/text-desktop.svg");
-    background-repeat: no-repeat;
-    min-height: 746px;
-    min-width: 1150px;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+    top: 200px;
   }
 }
+
+// .promo-pic__text {
+//   background-image: url("../img/text.svg");
+//   background-repeat: no-repeat;
+//   min-height: 300px;
+//   min-width: 320px;
+//   background-position: 50% 50%;
+
+//   @media (min-width: @tablet-width) {
+//     background-image: url("../img/text-tablet.svg");
+//     background-repeat: no-repeat;
+//     min-height: 746px;
+//     min-width: 765px;
+//   }
+
+//   @media (min-width: @desctop-width) {
+//     background-image: url("../img/text-desktop.svg");
+//     background-repeat: no-repeat;
+//     min-height: 746px;
+//     min-width: 1150px;
+//   }
+// }

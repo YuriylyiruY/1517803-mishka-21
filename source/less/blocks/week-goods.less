@@ -212,13 +212,20 @@
 }
 
 .week-goods__pic-first {
-  background-image: url("../img/set-mobile.svg");
+  background-image: url("../img/triple-set-desktop.png");
   background-repeat: no-repeat;
   height: 0;
   padding-bottom: 120.25%;
   width: 100%;
   background-size: contain;
   margin-top: 27px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/triple-set-desktop@2x.png");
+    height: 0;
+    padding-bottom: 120.25%;
+    width: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -232,11 +239,19 @@
     grid-row-start: 2;
     grid-row-end: 3;
     padding: 0;
-    background-image: url("../img/triple-tablet.svg");
+    background-image: url("../img/triple-set-tablet.png");
     background-repeat: no-repeat;
     min-height: 404px;
     width: 334px;
     margin-right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triple-set-tablet@2x.png");
+      height: 404px;
+      width: 334px;
+      margin-right: 0;
+      background-size: contain;
+    }
   }
 
   @media (min-width: @desctop-width) {
@@ -244,10 +259,17 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-image: url("../img/triple-desktop.svg");
+    background-image: url("../img/triple-set-desktop.png");
     background-repeat: no-repeat;
     height: 636px;
     width: 525px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triple-set-desktop@2x.png");
+      height: 0;
+      padding-bottom: 120.25%;
+      width: 100%;
+    }
   }
 }
 
