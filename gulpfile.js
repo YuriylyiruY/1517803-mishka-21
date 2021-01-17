@@ -12,6 +12,7 @@ const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -100,6 +101,13 @@ const copy = (done) => {
 
 exports.copy = copy;
 
+// Clean
+
+const clean = () => {
+  return del("build");
+};
+exports.clean = clean;
+
 // WebP
 
 const createWebp = () => {
@@ -146,4 +154,4 @@ const build = gulp.series(
     createWebp
   ));
 
-exports.build = build;//
+exports.build = build;

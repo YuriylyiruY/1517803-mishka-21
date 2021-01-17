@@ -6,6 +6,7 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
     "browser-sync": "2.26.13",
+    "del": "^6.0.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "5.0.1",
     "gulp-imagemin": "7.1.0",
@@ -33,7 +34,8 @@
     "sprite": "gulp sprite",
     "htmlmin": "gulp html",
     "scripts": "gulp scripts",
-    "copy": "gulp copy"
+    "copy": "gulp copy",
+    "clean": "gulp clean"
   },
   "browserslist": [
     "last 2 versions",
