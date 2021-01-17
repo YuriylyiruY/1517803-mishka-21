@@ -155,3 +155,20 @@ const build = gulp.series(
   ));
 
 exports.build = build;
+
+// Default
+
+exports.default = gulp.series(
+  clean,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    copy,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
