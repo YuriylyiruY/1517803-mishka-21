@@ -310,6 +310,12 @@
 }
 
 .play {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+
   &:hover::before {
     transform: scale(1.2);
     width: 101px;
@@ -330,8 +336,8 @@
     background-repeat: no-repeat;
     width: 101px;
     height: 77px;
-    left: 35%;
-    top: 25%;
+    //left: 35%;
+    //top: 25%;
     position: absolute;
   }
 
@@ -358,6 +364,7 @@
   padding-bottom: 60.25%;
   width: 100%;
   background-size: contain;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
