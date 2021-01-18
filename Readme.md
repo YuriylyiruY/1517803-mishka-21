@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Комендантский](https://up.htmlacademy.ru/adaptive/21/user/1517803).
-* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
+* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).
 
 ---
 
