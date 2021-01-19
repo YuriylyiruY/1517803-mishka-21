@@ -28,7 +28,7 @@ const styles = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(rename("styles.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -65,7 +65,7 @@ const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(uglify())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("build/js/script.min.js"))
     .pipe(sync.stream());
 }
 
@@ -92,6 +92,8 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
+    "source/css/**/*.css",
+    "source/js/**/*.js"
   ], {
     base: "source"
   })
@@ -171,4 +173,4 @@ exports.default = gulp.series(
   gulp.series(
     server,
     watcher
-  ));
+  ));//
