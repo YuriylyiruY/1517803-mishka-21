@@ -71,6 +71,15 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
+const scriptsCatalog = () => {
+  return gulp.src("source/js/script-catalog.js")
+    .pipe(uglify())
+    .pipe(rename("script-catalog.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scriptsCatalog = scriptsCatalog;
 // Images
 
 const images = () => {
@@ -150,6 +159,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
+    scriptsCatalog,
     sprite,
     copy,
     images,
@@ -166,6 +176,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
+    scriptsCatalog,
     sprite,
     copy,
     createWebp

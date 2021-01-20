@@ -93,7 +93,7 @@
             <a class="part__link">Корзинка для белья</a>
             <p class="part__disсription">Диаметр 15 см, высота 10 см</p>
             <p class="part__price price"><span class="price__ru">690p.</span>
-              <button class="price__button" type="button"></button></p>
+              <button class="price__button small" type="button"></button></p>
           </div>
         </li>
         <li class="goods-list__goods-item goods-item">
@@ -113,7 +113,7 @@
             <p class="part__disсription-double">Диаметр 30 см, высота 30 см</p>
             <p class="part__price price">
               <span class="price__ru">1500p.</span>
-              <button class="price__button" type="button">
+              <button class="price__button big" type="button">
               </button>
             </p>
           </div>
@@ -140,14 +140,19 @@
               value="Сделать заказ"></div>
         </li>
       </ul>
-      <form class="how-week-goods week-goods">
-        <p class="week-goods__order-title">Добавить в корзину</p>
-        <fieldset class="week-goods__choose"> Выберите размер
-          <label><input type="checkbox" checked>S</label>
-          <label><input type="checkbox">M</label>
-          <label><input type="checkbox">L</label>
+      <form class="goods__order-form order-form-not">
+        <!--order-form-->
+        <p class="order-form__order-title">Добавить <br>в корзину</p>
+        <p class="order-form__title"> Выберите размер:</p>
+        <fieldset class="order-form__wrap choose-size">
+          <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox" checked><span
+              class="pic-size__span">s</span></label>
+          <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox"><span
+              class="pic-size__span">m</span></label>
+          <label class="choose-size__label size"><input class="size__input pic-size" type="checkbox"><span
+              class="pic-size__span">l</span></label>
         </fieldset>
-        <input type="submit" value="Добавить">
+        <input class="order-form__submit" type="submit" value="Добавить">
       </form>
 
     </main>
@@ -213,7 +218,8 @@
       </section>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script-catalog.js"></script>
+
 </body>
 
 </html>
