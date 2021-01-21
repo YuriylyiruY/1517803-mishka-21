@@ -179,7 +179,7 @@ exports.default = gulp.series(
     scriptsCatalog,
     sprite,
     copy,
-    images,
+    //images,
     createWebp
   ),
   gulp.series(
