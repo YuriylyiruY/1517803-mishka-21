@@ -48,7 +48,7 @@ exports.html = html;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -102,9 +102,9 @@ const copy = (done) => {
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
     // "source/js/**/*.{js}",
-    // "source/css/**/*.{css}"
+    // "source/css/**/*.{css}",
   ], {
-    base: "build"
+    base: "source"
   })
     .pipe(gulp.dest("build"))
   done();
@@ -179,6 +179,7 @@ exports.default = gulp.series(
     scriptsCatalog,
     sprite,
     copy,
+    images,
     createWebp
   ),
   gulp.series(
