@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     min-height: 746px;
     min-width: 100%;
-    margin-top: -109px;
+    margin-top: -112px;
     border-top: 1px solid @border-rgba;
 
     @media (min-resolution: 2dppx) {
@@ -34,7 +34,7 @@
       min-width: 100%;
       min-height: 24px;
       left: 0;
-      bottom: -1px;
+      bottom: -10px;
       z-index: 5;
     }
   }
@@ -77,11 +77,24 @@
 
 
   @media (min-width: @tablet-width) {
-    font-weight: 700;
-    font-size: 43px;
-    line-height: 50px;
+    // font-weight: 700;
+    // font-size: 43px;
+    // line-height: 50px;
+    color: transparent;
     top: 152px;
     left: 70px;
+
+    &::before {
+      content:"";
+      position: absolute;
+      background-image: url("../img/text-tablet-m.svg");
+      background-repeat: no-repeat;
+      z-index: 3;
+      width: 668px;
+      height: 100px;
+      left: 63px;
+      top: 9px;
+    }
   }
 
   @media (min-width: @desctop-width) {
@@ -89,6 +102,7 @@
     font-size: 53px;
     line-height: 57px;
     top: 200px;
+    color: @black;
   }
 }
 

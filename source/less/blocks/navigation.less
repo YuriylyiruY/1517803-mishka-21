@@ -94,12 +94,13 @@
 
   @media (min-width: @tablet-width) {
     position: static;
-    width: 299px;
+    width: 320px;
     height: 90px;
     padding: 0;
     background-position: 0 50%;
     background-image: url("../img/mishka-logo-tablet.svg");
     background-repeat: no-repeat;
+    border-right: 1px solid @border-rgba;
 
     &:hover {
       position: static;
@@ -213,7 +214,7 @@
   @media (min-width: @tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
-    width: 41%;
+    width: 50%;
     height: 90px;
     margin: 0;
   }
@@ -229,7 +230,7 @@
 
     height: 90px;
     margin: 0;
-    width: 59%;
+    width: 50%;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
@@ -279,12 +280,12 @@
     width: 85px;
     height: 90px;
     border-right: 1px solid @border-rgba;
-    border-left: 1px solid @border-rgba;
+   // border-left: 1px solid @border-rgba;
 
     &::before {
       content: "";
       position: absolute;
-      left: 35px;
+      left: 15px;
       top: 36px;
       width: 36px;
       height: 39px;
@@ -293,7 +294,7 @@
     }
 
     @media (min-width: @tablet-width) {
-      left: 35px;
+      left: 37px;
       top: 35px;
     }
   }
@@ -318,7 +319,7 @@
 
   @media (min-width: @tablet-width) {
     height: 90px;
-    width: 83px;
+    width: 67px;
     margin: 0;
   }
 
@@ -334,7 +335,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    min-width: 264px;
+    min-width: 263px;
     margin: 0;
   }
 }
