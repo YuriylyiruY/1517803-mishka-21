@@ -5,13 +5,19 @@
 
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
+    height: 90%;
     text-align: center;
     justify-content: center;
   }
+
+  @media (min-width: @desctop-width) {
+    width: 17.5%;
+    margin-top: 6px;
+  }
 }
 
-svg {
+.square {
   fill: @black;
 
   &:hover {
