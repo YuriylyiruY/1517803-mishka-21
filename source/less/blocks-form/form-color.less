@@ -12,6 +12,7 @@
   border-top: 1px solid @light-green;
   min-width: 260px;
   padding: 10px 0;
+  margin-bottom:10px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -40,16 +41,14 @@
   line-height: 18px;
   color: @black;
 }
-
 .content-color__input {
   appearance: none;
 }
-
 .content-color {
   position: relative;
   margin: 20px;
   display: flex;
-  margin-left: 65px;
+  margin-left: 60px;
   height: 40px;
   align-items: center;
 
@@ -63,14 +62,69 @@
     width: 20%;
   }
 }
+.content-color-black {
+  position: relative;
+  margin: 20px;
+  display: flex;
+  margin-left: 60px;
+  height: 40px;
+  align-items: center;
+  margin-top:24px;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 20%;
+  }
+}
+.content-color-pink {
+  position: relative;
+  margin: 20px;
+  display: flex;
+  margin-left: 60px;
+  height: 40px;
+  align-items: center;
+  margin-top:22px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 20%;
+  }
+}
+.content-color-orange {
+  position: relative;
+  margin: 20px;
+  display: flex;
+  margin-left: 60px;
+  height: 40px;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 20%;
+  }
+}
 .content-color__checkbox {
   position: absolute;
   height: 40px;
   width: 40px;
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
-  left: -65px;
+  left: -63px;
 
   &:hover {
     height: 40px;
@@ -86,8 +140,103 @@
     background-repeat: no-repeat;
   }
 }
+.content-color__checkbox-tiffany {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  left: -63px;
+  top:2px;
 
-.content-color__input:checked + .content-color__checkbox {
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-down.svg");
+    background-repeat: no-repeat;
+  }
+}
+.content-color__checkbox-black {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  left: -63px;
+  top:-1px;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-down.svg");
+    background-repeat: no-repeat;
+  }
+}
+.content-color__checkbox-pink {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  left: -63px;
+  top:-3px;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-down.svg");
+    background-repeat: no-repeat;
+  }
+}
+.content-color__checkbox-orange {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  left: -63px;
+  top:-2px;
+
+  &:hover {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/rect-down.svg");
+    background-repeat: no-repeat;
+  }
+}
+.content-color__input:checked + .content-color__checkbox,
+.content-color__checkbox-tiffany,
+.content-color__checkbox-black,
+.content-color__checkbox-pink,
+.content-color__checkbox-orange {
   height: 40px;
   width: 40px;
   background-image: url("../img/active-checkbox.svg");
