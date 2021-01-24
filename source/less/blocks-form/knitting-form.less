@@ -3,7 +3,8 @@
   border-top: 1px solid @light-green;
   padding: 30px 0;
   min-width: 260px;
-  margin-top:-15px;
+  margin-top: -15px;
+  margin-bottom: 1px;
 
   @media (min-width: @tablet-width) {
     background: @white-color;
@@ -15,6 +16,7 @@
     padding: 0;
     position: relative;
     width: 100%;
+    padding-bottom: 25px;
     // outline: 2px solid red;
     // outline-offset: -2px;
   }
@@ -28,7 +30,7 @@
 
 .tel-inside-block {
   position: relative;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 
   &::before {
 
@@ -68,8 +70,8 @@
       background-repeat: no-repeat;
       width: 25px;
       height: 24px;
-      right: 20px;
-      bottom: 22px;
+      right: 27px;
+      bottom: 21px;
       z-index: 3;
     }
   }
@@ -98,7 +100,7 @@
       background-repeat: no-repeat;
       width: 25px;
       height: 24px;
-      right: 75px;
+      right: 183px;
       bottom: 22px;
       z-index: 3;
     }
@@ -125,6 +127,8 @@
     // outline: 2px solid red;
     // outline-offset: -2px;
     position: relative;
+    margin-top: -5px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: @desctop-width) {
@@ -136,7 +140,8 @@
 }
 
 .email-inside-block {
-  margin-bottom:-12px;
+  margin-bottom: 6px;
+
   &:hover::before {
     background-image: url("../img/mail-green.svg");
     background-repeat: no-repeat;
@@ -155,8 +160,8 @@
     background-repeat: no-repeat;
     width: 32px;
     height: 21px;
-    right: 14px;
-    bottom: 50px;
+    right: 6px;
+    bottom: 57px;
     z-index: 3;
   }
 
@@ -175,8 +180,8 @@
       background-repeat: no-repeat;
       width: 32px;
       height: 21px;
-      right: 65px;
-      bottom: 42px;
+      right: 71px;
+      bottom: 66px;
       z-index: 3;
     }
   }
@@ -195,8 +200,8 @@
       background-repeat: no-repeat;
       width: 32px;
       height: 21px;
-      right: 120px;
-      bottom: 42px;
+      right: 230px;
+      bottom: 67px;
       z-index: 3;
     }
   }
@@ -212,10 +217,9 @@
   line-height: 18px;
   position: relative;
   margin-top: -15px;
-  margin-left:-4px;
+  margin-left: -4px;
   //padding: 15px 0;
-  padding-bottom:15px;
-
+  padding-bottom: 15px;
   margin-bottom: 5px;
   width: 100%;
   border: none;
@@ -230,17 +234,23 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 97%;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
     height: 30px;
     padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background: @white-color;
+    padding-top: 43px;
+    padding-bottom: 12px;
+    padding-left: 18px;
   }
 
   @media (min-width: @desctop-width) {
-    width: 95%;
+    width: 78%;
   }
 }
 
@@ -254,10 +264,10 @@
   line-height: 18px;
   position: relative;
   margin-top: -5px;
-  margin-left:-5px;
+  margin-left: -5px;
   //padding: 15px 0;
-  padding-top:-10px;
-  padding-bottom:16px;
+  padding-top: -10px;
+  padding-bottom: 15px;
   margin-bottom: 5px;
   width: 100%;
   border: none;
@@ -272,16 +282,22 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+    width: 96%;
     height: 30px;
-    padding: 5px 0;
+    //padding: 5px 0;
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 22px;
+    padding-left: 20px;
+    margin-left: -1px;
+    padding-bottom: 12px;
     background: @white-color;
   }
 
   @media (min-width: @desctop-width) {
-    width: 95%;
+    width: 78%;
   }
 }

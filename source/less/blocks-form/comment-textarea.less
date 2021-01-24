@@ -17,7 +17,9 @@
   }
 
   @media (min-width: @desctop-width) {
-    width: 95%;
+    width: 80%;
+    margin-left:1px;
+    margin-bottom:45px;
   }
 }
 
@@ -28,9 +30,11 @@
   border-color: fade(@black, 10%);
   position: relative;
   //padding: 15px 0 15px 15px;
-  width: 100%;
+  width: 96%;
   border: 2px solid @black;
   color: @black;
+  margin-left: -1px;
+  height: 135px;
 
   &:hover {
     border: 2px solid @underline-color;
@@ -53,5 +57,18 @@
   @media (min-width: @tablet-width) {
     min-width: 100%;
     padding: 15px 0;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.placeholder-content-text::placeholder {
+  padding-left: 11px;
+  color: @black-active;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 15px;
   }
 }
