@@ -31,6 +31,7 @@ h6 {
   padding: 0;
 }
 
+
 .body-wraper {
   background-color: @background-main-color;
   color: @braun-letters-color;
@@ -69,4 +70,34 @@ h6 {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("fonts/opensans.woff2") format("woff2"),
+    url("fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("fonts/opensansbold.woff2") format("woff2"),
+    url("fonts/opensansbold.woff") format("woff");
+}
+
+body{
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.font(@line-height; @font-size; @font-weight) {
+  line-height: @line-height;
+  font-size: @font-size;
+  font-weight: @font-weight;
 }
